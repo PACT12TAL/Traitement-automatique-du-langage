@@ -9,19 +9,20 @@ public class MethodeDeBase
 	// creer plusieurs classes pour chaque objet ici comme une classe base de donn仔s, une classe tableau d'analyse... rend les transferts entre classes inutilement diffi
 
 	
-	protected final static int N = 42 ; // valeur a changer.
+	protected final static int N = 43 ; // valeur a changer.
 		// N est le nombre de lemmes ou de mots
 	
-	protected final static int M = 50 ; // valeur a changer.
+	protected final static int M = 38 ; // valeur a changer.
 	// M est le nombre de commandes vocales que l'on a dans la base de donnees
 	
-	public static String[] B = {"je","j'","on","aimerais","voudrais","veux","commence","commencer","quitter","ajouter","payer","r使ler","acc仕er","enlever","retirer","retourner","voir","consulter","essayer","catalogue","paiement","retour","ok","page","pr残仕ent","pr残仕ente","suivant","suivante","demander","changer","v腎ement","couleur","taille","mod粛e","disponible","coloris","T-shirt","polo","pull","chemise","veste","trois"};
+	public static String[] B = {"je","j'","on","aimerais","voudrais","veux","commence","commencer","quitter","ajouter","payer","r使ler","acc仕er","enlever","retirer","retourner","voir","consulter","essayer","catalogue","panier","paiement","retour","ok","page","pr残仕ent","pr残仕ente","suivant","suivante","demander","changer","v腎ement","couleur","taille","mod粛e","disponible","coloris","T-shirt","polo","pull","chemise","veste","trois"};
 		// B est un tableau de taille N qui contiendra les mots de notre base de donn仔s 
 	
 	
 	
 	
-	private ArrayList<String> toutesLesPhrases= new ArrayList<String>();
+	public ArrayList<String> toutesLesPhrases= new ArrayList<String>();
+		// private normalement mais pour y acc仕er dans les classes de cr斬tion de tableaudetableaux
 	
 	public MethodeDeBase()
 	{
@@ -45,18 +46,7 @@ public class MethodeDeBase
 		toutesLesPhrases.add("J'aimerais retourner au catalogue");
 		toutesLesPhrases.add("J'aimerais voir le catalogue");
 		toutesLesPhrases.add("J'aimerais consulter le catalogue");
-		toutesLesPhrases.add("Je voudrais acc仕er au catalogue");
-		toutesLesPhrases.add("Je voudrais retourner au catalogue");
-		toutesLesPhrases.add("Je voudrais voir le catalogue");
-		toutesLesPhrases.add("Je voudrais consulter le catalogue");
-		toutesLesPhrases.add("Je veux acc仕er au catalogue");
-		toutesLesPhrases.add("Je veux retourner au catalogue");
-		toutesLesPhrases.add("Je veux voir le catalogue");
-		toutesLesPhrases.add("Je veux consulter le catalogue");
-		toutesLesPhrases.add("Je souhaite acc仕er au catalogue");
-		toutesLesPhrases.add("Je souhaite retourner au catalogue");
-		toutesLesPhrases.add("Je souhaite voir le catalogue");
-		toutesLesPhrases.add("Je souhaite consulter le catalogue");
+	
 		
 		//commande avec le panier
 		toutesLesPhrases.add("Ajouter au panier");
@@ -86,13 +76,16 @@ public class MethodeDeBase
 	}
 	
 	
-	private static int[][] tableauDeTableau = {{1,2,3},{0,0,4}};
+	private static int[][] tableauDeTableaux = {{0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},{0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0}};
 	
 	
 	
 	public String phrase;
 		// phrase est la phrase a analyser en un seul string fourni par l'API google
-		
+	
+	
+	/* private ArrayList<String> commande= creerCommande(phrase); 
+		/**  commande est la arraylist de mots de la phrase phrase*/
 
 	
 	public static ArrayList<String> creerCommande(String phrase)
@@ -100,7 +93,8 @@ public class MethodeDeBase
 		ArrayList<String> liste = new ArrayList<String>();
 		int longueur =phrase.length();
 		String currentWord = "";
-		for (int i=0;i<longueur;i++){
+		for (int i=0;i<longueur;i++)
+		{
 			String caractere=phrase.substring(i, i+1).toLowerCase();
 			if(caractere.equals(" ")){
 				if(!(currentWord.equals(" "))){
@@ -116,14 +110,20 @@ public class MethodeDeBase
 			}
 				
 		}
+		liste.add(currentWord);
+		
 		return liste;
 	}
 
-	
-	private ArrayList<String> commande = creerCommande(phrase); 
-		/**  commande est la arraylist de mots de la phrase phrase*/
+
 
 	
+	public static void initT(int[] T)
+	{
+		//initialise les cases du tableau T a zero pour 思iter les mauvaises surprises
+		for (int i=0 ; i<N ; i++ )
+			T[i] = 0;
+	}
 	
 	public static int reconnaissanceMot(String mot)
 	{
@@ -131,18 +131,13 @@ public class MethodeDeBase
 		// elle retourne le numero de la case dans laquelle est le lemme
 		// si le mot n'est pas dans le mot renvoie N
 		int i = 0;
-		while (!mot.toLowerCase().equals(B[i].toLowerCase()) && i!=(N))
+		while (!mot.toLowerCase().equals(B[i].toLowerCase()) && i!=(N-1))
 			i+=1;
 		
+		if( i==(N-1) )
+			i= (!mot.toLowerCase().equals(B[i].toLowerCase()))? N : (N-1) ;
+		
 		return i;
-	}
-	
-	
-	public static void initT(int[] T)
-	{
-		//initialise les cases du tableau T a zero pour 思iter les mauvaises surprises
-		for (int i=0 ; i<N ; i++ )
-			T[i] = 0;
 	}
 	
 	public static void incrementationTableau(int i, int[] tab)
@@ -152,11 +147,11 @@ public class MethodeDeBase
 	}
 	
 	
-	public static int[] TableauAnalyse(ArrayList<String> phrase) 
+	public static int[] TableauAnalyse(ArrayList<String> commande) 
 	{
 		 int[] tableau = new int[N];
 		initT(tableau);
-		for (String mot: phrase)
+		for (String mot: commande)
 			incrementationTableau(reconnaissanceMot(mot),tableau);	
 		return tableau;
 	}
@@ -169,38 +164,102 @@ public class MethodeDeBase
 		double ps = 0;
 		
 		int i;
-		for (i=0 ; i<N ; i++)
-			 normTab1 += ((tab1[i])^2);
+		for (i=0 ; i<tab1.length ; i++)
+			 normTab1 += ((tab1[i])*(tab1[i]));
 		
 		int j;
-		for (j=0 ; j<N ; j++)
-			 normTab2 += ((tab2[j])^2);
+		for (j=0 ; j<tab2.length ; j++)
+			 normTab2 += ((tab2[j])*(tab2[j]));
 		
 		int k;
 		for (k=0 ; k<N ; k++)
 			 ps += ((tab1[k])*(tab2[k]));
 		
-		return (ps/(Math.sqrt(normTab1*normTab2)));
+		return ((ps+0.0)/(Math.sqrt(normTab1*normTab2)));
 			// renvoie le ps norme
 	}
+	
 	
 	public static int tableauLePlusProche(int[] tabl)
 	{
 		int i;
-		int indicePlusProche; 
+		int indicePlusProche=0; 
 			// indice du tableau de la base de donn仔s le plus proche du tableau tabl
-		double psPlusGrand = 0;
+		double psPlusGrand;
 			//ps norme de tabl et du tableau le plus proche de tabl
-		
+		psPlusGrand = comparateurDeDeuxTableaux(tabl , tableauDeTableaux[0]);
 		
 		for (i=1 ; i<M ; i++)
-			if ( psPlusGrand < comparateurDeDeuxTableaux(tabl , tableauDeTableau[i]) )
-				psPlusGrand = comparateurDeDeuxTableaux(tabl, tableauDeTableau[i]) ;
+			if (psPlusGrand < comparateurDeDeuxTableaux(tabl , tableauDeTableaux[i]) )
+			{
+				psPlusGrand = comparateurDeDeuxTableaux(tabl, tableauDeTableaux[i]); 
 				indicePlusProche = i ;
+			}	
 		
 		return (indicePlusProche);
 		
 	}
 	
 	
+	
+	public static int correspondanceClasseAction(int indice)
+	{
+		int indiceClasseAction;
+		
+		switch(indice)
+		{
+		case 0 :
+			indiceClasseAction = 0;
+		break;
+		
+		case 1 :
+			indiceClasseAction = 0;
+		break;
+		
+		case 3 :
+			indiceClasseAction = 10;
+		break;
+		
+		case 2 :
+			indiceClasseAction = 2;
+		break;
+		
+		case 8 :
+			indiceClasseAction = 5;
+		break;
+		
+		case 7 :
+			indiceClasseAction = 22;
+		break;
+		
+		case 6 :
+			indiceClasseAction = 17;
+		break;
+		
+		case 35 :
+			indiceClasseAction = 13;
+		break;
+		
+		case 32 :
+			indiceClasseAction = 20;
+		break;
+		
+		case 33 :
+			indiceClasseAction = 20;
+		break;
+		
+		case 37 :
+			indiceClasseAction = 20;
+		break;		
+		
+		default :
+			indiceClasseAction = -1;
+			
+		
+		
+		}
+		
+		return (indiceClasseAction);
+				
+	}
 }

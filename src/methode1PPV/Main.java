@@ -11,7 +11,7 @@ public class Main {
 		//l'envoyer à l'API google
 		//on recoit une phrase que l'on nomme parole
 		
-	String parole="Accéder au panier";
+	String parole="pull";
 	
 	
 	int[] T = new int[MethodeDeBase.N]; 
@@ -25,7 +25,9 @@ public class Main {
 	
 	int indiceCommande = MethodeDeBase.tableauLePlusProche(T);
 	
-	System.out.println(indiceCommande);
+	int indiceAction = MethodeDeBase.correspondanceClasseAction(indiceCommande);
+		
+	System.out.println(indiceAction);
 	
 
 	}
