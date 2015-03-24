@@ -45,7 +45,7 @@ public class Methodes3PPVCosinus
 	public static ArrayList<String> toutesLesPhrases= new ArrayList<String>();
 		// private normalement mais pour y accéder dans les classes de création de tableaudetableaux
 	
-	protected final static int M = toutesLesPhrases.size() ;
+	protected static int M ;
 		// M est le nombre de commandes vocales que l'on a dans la base de donnees
 	
 	
@@ -98,6 +98,13 @@ public class Methodes3PPVCosinus
 		toutesLesPhrases.add("pull");
 		toutesLesPhrases.add("Changer de pull");
 		toutesLesPhrases.add("essayer le pull");
+		
+		
+		
+		M = toutesLesPhrases.size() ;
+		// M est le nombre de commandes vocales que l'on a dans la base de donnees
+		
+		
 	}
 	
 	
