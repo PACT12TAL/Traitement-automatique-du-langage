@@ -44,7 +44,7 @@ public class Methodes1PPVTFIDF
 	public static ArrayList<String> toutesLesPhrases= new ArrayList<String>();
 		// private normalement mais pour y accéder dans les classes de création de tableaudetableaux
 	
-	protected final static int M = toutesLesPhrases.size() ;
+	protected static int M ;
 		// M est le nombre de commandes vocales que l'on a dans la base de donnees
 	
 	
@@ -97,10 +97,42 @@ public class Methodes1PPVTFIDF
 		toutesLesPhrases.add("pull");
 		toutesLesPhrases.add("Changer de pull");
 		toutesLesPhrases.add("essayer le pull");
+		
+		
+
+		M = toutesLesPhrases.size() ;
+			// M est le nombre de commandes vocales que l'on a dans la base de donnees
+		
 	}
 	
 	
 	
+
+	private static int[] DF = new int [N] ;
+	
+	public static void remplirDF()
+	{
+		for(String commande : toutesLesPhrases)
+		{
+			boolean[] DFB = new boolean [N] ;
+			ArrayList<String> mots = creerCommande(commande);
+			for (int j=0 ; j<mots.size() ; j++)
+			{
+				for(int i=0 ; i<N ; i++)
+				{
+					if(B[i].toLowerCase().equals(mots.get(j).toLowerCase())) 
+						{
+						DFB[i]=true;
+						break;
+						}
+				}	
+			}
+			for(int i=0 ; i<N ; i++) 
+			{
+				if(DFB[i]) DF[i]+=1;
+			}
+		}
+	}
 	
 	
 	private static int[][] tableauDeTableaux = new int[N][M];

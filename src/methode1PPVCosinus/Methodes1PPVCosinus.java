@@ -100,9 +100,6 @@ public class Methodes1PPVCosinus
 	}
 	
 	
-	
-	
-	
 	private static int[][] tableauDeTableaux = new int[N][M];
 	
 	public static void remplirTableauDeTableaux()
