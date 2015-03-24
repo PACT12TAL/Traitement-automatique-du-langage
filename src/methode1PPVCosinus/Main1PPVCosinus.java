@@ -1,9 +1,9 @@
-package methode1PPV;
+package methode1PPVCosinus;
 
 import java.util.ArrayList;
 
 
-public class Main {
+public class Main1PPVCosinus {
 	
 	public static void main(String[] args) 
 	{	
@@ -14,22 +14,22 @@ public class Main {
 	String parole="vous auriez un pull d'une autre couleur";
 	
 	
-	int[] T = new int[MethodeDeBase.N]; 
+	int[] T = new int[Methodes1PPVCosinus.N]; 
 	// T est le tableau d'analyse du mot qui contiendra les nombres d'occurences des mots de la phrase a analyser
 
 	
-	ArrayList<String> commande = MethodeDeBase.creerCommande(parole); 
+	ArrayList<String> commande = Methodes1PPVCosinus.creerCommande(parole); 
 	/** commande est la arraylist de mots de la phrase a analyser*/
 	
-	T = MethodeDeBase.TableauAnalyse(commande);
+	T = Methodes1PPVCosinus.TableauAnalyse(commande);
 	
-	int indiceCommande = MethodeDeBase.tableauLePlusProche(T);
+	int indiceCommande = Methodes1PPVCosinus.tableauLePlusProche(T);
 	
-	int indiceAction = MethodeDeBase.correspondanceClasseAction(indiceCommande);
+	int indiceAction = Methodes1PPVCosinus.correspondanceClasseAction(indiceCommande);
 	
 	System.out.println(indiceCommande);
 	System.out.println(indiceAction);
-	System.out.println(MethodeDeBase.toutesLesPhrases.get(indiceCommande));
+	System.out.println(Methodes1PPVCosinus.toutesLesPhrases.get(indiceCommande));
 	
 
 	}

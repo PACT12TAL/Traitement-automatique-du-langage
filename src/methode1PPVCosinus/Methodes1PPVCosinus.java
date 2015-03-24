@@ -1,23 +1,23 @@
-package methode1PPV;
+package methode1PPVCosinus;
 import java.util.ArrayList;
 
 
 
-public class MethodeDeBase 
+public class Methodes1PPVCosinus 
 {
 	// toute la méthode est implémentée dans le meme classe
 	// creer plusieurs classes pour chaque objet ici comme une classe base de données, une classe tableau d'analyse... rend les transferts entre classes inutilement diffi
 
-	public static String[] C ; 
+	public static String[] B ; 
 	// B est un tableau de taille N qui contiendra les mots de notre base de données 
 
-	protected final static int N = C.length ;
+	protected final static int N = B.length ;
 		// valeur a changer. 
 		// N est le nombre de lemmes ou de mots
 	
 
 	
-	public static void remplirTableauC () 
+	public static void remplirTableauB () 
 	{
 		ArrayList<String> listeFinale = new ArrayList<String>();
 		for ( String phrase : toutesLesPhrases)
@@ -33,9 +33,9 @@ public class MethodeDeBase
 				
 			}
 		}
-		C = new String[listeFinale.size()];
+		B = new String[listeFinale.size()];
 		for (int i=0 ; i < listeFinale.size() ; i++) 
-			C[i] = listeFinale.get(i);	
+			B[i] = listeFinale.get(i);	
 	}
 	
 	
@@ -47,7 +47,7 @@ public class MethodeDeBase
 		// M est le nombre de commandes vocales que l'on a dans la base de donnees
 	
 	
-	public MethodeDeBase()
+	public Methodes1PPVCosinus()
 	{
 		// phrase pour les boutons de l'interface
 		toutesLesPhrases.add("commencer");
@@ -198,11 +198,11 @@ public class MethodeDeBase
 		// elle retourne le numero de la case dans laquelle est le lemme
 		// si le mot n'est pas dans le mot renvoie N
 		int i = 0;
-		while (!mot.toLowerCase().equals(C[i].toLowerCase()) && i!=(N-1))
+		while (!mot.toLowerCase().equals(B[i].toLowerCase()) && i!=(N-1))
 			i+=1;
 		
 		if( i==(N-1) )
-			i= (!mot.toLowerCase().equals(C[i].toLowerCase()))? N : (N-1) ;
+			i= (!mot.toLowerCase().equals(B[i].toLowerCase()))? N : (N-1) ;
 		
 		return i;
 	}

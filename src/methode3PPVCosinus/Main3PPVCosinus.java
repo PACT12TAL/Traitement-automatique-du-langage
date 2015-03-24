@@ -1,11 +1,11 @@
-package methode3PPV;
+package methode3PPVCosinus;
 
 import java.util.ArrayList;
 
-import methode3PPV.MethodeDeBase;
+import methode3PPVCosinus.Methodes3PPVCosinus;
 
 
-public class Main3ppv {
+public class Main3PPVCosinus {
 	
 	public static void main(String[] args) 
 	{	
@@ -16,16 +16,16 @@ public class Main3ppv {
 	String parole="essayer le pull";
 	
 	
-	int[] T = new int[MethodeDeBase.N]; 
+	int[] T = new int[Methodes3PPVCosinus.N]; 
 	// T est le tableau d'analyse du mot qui contiendra les nombres d'occurences des mots de la phrase a analyser
 
 	
-	ArrayList<String> commande = MethodeDeBase.creerCommande(parole); 
+	ArrayList<String> commande = Methodes3PPVCosinus.creerCommande(parole); 
 	/** commande est la arraylist de mots de la phrase a analyser*/
 	
-	T = MethodeDeBase.TableauAnalyse(commande);
+	T = Methodes3PPVCosinus.TableauAnalyse(commande);
 	
-	int indiceAction = MethodeDeBase.commandeLaPlusProbable(T);
+	int indiceAction = Methodes3PPVCosinus.commandeLaPlusProbable(T);
 		
 	System.out.println(indiceAction);
 	
