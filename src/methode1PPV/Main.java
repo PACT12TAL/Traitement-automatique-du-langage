@@ -11,7 +11,7 @@ public class Main {
 		//l'envoyer ˆ l'API google
 		//on recoit une phrase que l'on nomme parole
 		
-	String parole="pull";
+	String parole="vous auriez un pull d'une autre couleur";
 	
 	
 	int[] T = new int[MethodeDeBase.N]; 
@@ -26,8 +26,10 @@ public class Main {
 	int indiceCommande = MethodeDeBase.tableauLePlusProche(T);
 	
 	int indiceAction = MethodeDeBase.correspondanceClasseAction(indiceCommande);
-		
+	
+	System.out.println(indiceCommande);
 	System.out.println(indiceAction);
+	System.out.println(MethodeDeBase.toutesLesPhrases.get(indiceCommande));
 	
 
 	}

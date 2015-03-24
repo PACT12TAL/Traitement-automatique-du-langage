@@ -8,18 +8,14 @@ public class MethodeDeBase
 	// toute la méthode est implémentée dans le meme classe
 	// creer plusieurs classes pour chaque objet ici comme une classe base de données, une classe tableau d'analyse... rend les transferts entre classes inutilement diffi
 
-	
-	protected final static int N = 43 ; /** = C.size */
+	public static String[] C ; 
+	// B est un tableau de taille N qui contiendra les mots de notre base de données 
+
+	protected final static int N = C.length ;
 		// valeur a changer. 
 		// N est le nombre de lemmes ou de mots
 	
-	protected final static int M = 38 ; // valeur a changer.
-	// M est le nombre de commandes vocales que l'on a dans la base de donnees
-	
-	public static String[] B = {"je","j'","on","aimerais","voudrais","veux","commence","commencer","quitter","ajouter","payer","régler","accéder","enlever","retirer","retourner","voir","consulter","essayer","catalogue","panier","paiement","retour","ok","page","précédent","précédente","suivant","suivante","demander","changer","vêtement","couleur","taille","modèle","disponible","coloris","T-shirt","polo","pull","chemise","veste","trois"};
-		// B est un tableau de taille N qui contiendra les mots de notre base de données 
-	
-	public static String[] C ; 
+
 	
 	public static void remplirTableauC () 
 	{
@@ -42,14 +38,14 @@ public class MethodeDeBase
 			C[i] = listeFinale.get(i);	
 	}
 	
-	public static void main(String[] args){
-		new MethodeDeBase();
-		System.out.println(MethodeDeBase.testMethode());
-	}
 	
 	
 	public static ArrayList<String> toutesLesPhrases= new ArrayList<String>();
 		// private normalement mais pour y accéder dans les classes de création de tableaudetableaux
+	
+	protected final static int M = toutesLesPhrases.size() ;
+		// M est le nombre de commandes vocales que l'on a dans la base de donnees
+	
 	
 	public MethodeDeBase()
 	{
@@ -103,64 +99,75 @@ public class MethodeDeBase
 	}
 	
 	
-	private static int[][] tableauDeTableaux = {{0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},{0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0}};
 	
 	
 	
-	private static int[][] tableauDeTableau = new int[N][M];
+	private static int[][] tableauDeTableaux = new int[N][M];
 	
-	public static void remplirTableauDeTableau(){
-		
-			for (int j=0;j<toutesLesPhrases.size();j++){
-			
+	public static void remplirTableauDeTableaux()
+	{
+		for (int j=0;j<toutesLesPhrases.size();j++)
+			{
 				int[] T = TableauAnalyse(creerCommande(toutesLesPhrases.get(j)));
-				tableauDeTableau[j]=T;
-			
-		}
+				tableauDeTableaux[j]=T;
+			}
 	}
-	
-	public static boolean testMethode(){
-		remplirTableauDeTableau();
-		System.out.println(B[36]);
-		for (int i=0;i<M;i++)
-			for(int j=0;j<N;j++){
-				if(tableauDeTableau[i][j]!=tableauDeTableaux[i][j]){
-					System.out.println(""+i+" "+j);
-				}
-					
-					
-			}return true;
-		
-	}
-			
 			
 	
 	public String phrase;
 		// phrase est la phrase a analyser en un seul string fourni par l'API google
 	
 	
-	/* private ArrayList<String> commande= creerCommande(phrase); 
-		/**  commande est la arraylist de mots de la phrase phrase*/
-
 	
 	public static ArrayList<String> creerCommande(String phrase)
 	{
 		ArrayList<String> liste = new ArrayList<String>();
 		int longueur =phrase.length();
 		String currentWord = "";
-		for (int i=0;i<longueur;i++)
+		for (int i=0 ; i<longueur ; i++)
 		{
-			String caractere=phrase.substring(i, i+1).toLowerCase();
-			if(caractere.equals(" ")){
-				if(!(currentWord.equals(" "))){
+			String caractere=phrase.substring(i , i+1).toLowerCase();
+			if(caractere.equals(" "))
+			{
+				if(!(currentWord.equals(" ")))
+				{
 				liste.add(currentWord);
 				currentWord="";
 				}
-			}else if (caractere.equals("'")){
+			}
+			else if (caractere.equals("'"))
+			{
 				currentWord+=caractere;
 				liste.add(currentWord);
 				currentWord="";
-			}else{
+			}
+			else if (caractere.equals("."))
+			{
+				liste.add(currentWord);
+				currentWord="";
+			}
+			else if (caractere.equals("!"))
+			{
+				liste.add(currentWord);
+				currentWord="";
+			}
+			else if (caractere.equals("?"))
+			{
+				liste.add(currentWord);
+				currentWord="";
+			}
+			else if (caractere.equals(";"))
+			{
+				liste.add(currentWord);
+				currentWord="";
+			}
+			else if (caractere.equals(","))
+			{
+				liste.add(currentWord);
+				currentWord="";
+			}
+			else
+			{
 				currentWord+=caractere;
 			}
 				
@@ -186,11 +193,11 @@ public class MethodeDeBase
 		// elle retourne le numero de la case dans laquelle est le lemme
 		// si le mot n'est pas dans le mot renvoie N
 		int i = 0;
-		while (!mot.toLowerCase().equals(B[i].toLowerCase()) && i!=(N-1))
+		while (!mot.toLowerCase().equals(C[i].toLowerCase()) && i!=(N-1))
 			i+=1;
 		
 		if( i==(N-1) )
-			i= (!mot.toLowerCase().equals(B[i].toLowerCase()))? N : (N-1) ;
+			i= (!mot.toLowerCase().equals(C[i].toLowerCase()))? N : (N-1) ;
 		
 		return i;
 	}
