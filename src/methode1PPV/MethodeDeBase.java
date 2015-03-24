@@ -166,6 +166,11 @@ public class MethodeDeBase
 				liste.add(currentWord);
 				currentWord="";
 			}
+			else if (caractere.equals(":"))
+			{
+				liste.add(currentWord);
+				currentWord="";
+			}
 			else
 			{
 				currentWord+=caractere;
