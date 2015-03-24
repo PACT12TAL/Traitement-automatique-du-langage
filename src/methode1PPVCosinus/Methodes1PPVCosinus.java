@@ -11,7 +11,7 @@ public class Methodes1PPVCosinus
 	public static String[] B ; 
 	// B est un tableau de taille N qui contiendra les mots de notre base de données 
 
-	protected final static int N = B.length ;
+	protected static int N ;
 		// valeur a changer. 
 		// N est le nombre de lemmes ou de mots
 	
@@ -35,7 +35,8 @@ public class Methodes1PPVCosinus
 		}
 		B = new String[listeFinale.size()];
 		for (int i=0 ; i < listeFinale.size() ; i++) 
-			B[i] = listeFinale.get(i);	
+			B[i] = listeFinale.get(i);
+		N = B.length ;
 	}
 	
 	
