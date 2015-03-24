@@ -1,11 +1,11 @@
-package methode3PPVCosinus;
+package methode1PPVTFIDF;
+
 import java.util.ArrayList;
 
-
-
-
-public class Methodes3PPVCosinus 
+public class Methodes1PPVTFIDF 
 {
+
+
 	// toute la méthode est implémentée dans le meme classe
 	// creer plusieurs classes pour chaque objet ici comme une classe base de données, une classe tableau d'analyse... rend les transferts entre classes inutilement diffi
 
@@ -13,12 +13,11 @@ public class Methodes3PPVCosinus
 	// B est un tableau de taille N qui contiendra les mots de notre base de données 
 
 	protected static int N ;
-		// valeur a changer. 
 		// N est le nombre de lemmes ou de mots
 	
 
 	
-	public static void remplirTableauC () 
+	public static void remplirTableauB () 
 	{
 		ArrayList<String> listeFinale = new ArrayList<String>();
 		for ( String phrase : toutesLesPhrases)
@@ -36,7 +35,7 @@ public class Methodes3PPVCosinus
 		}
 		B = new String[listeFinale.size()];
 		for (int i=0 ; i < listeFinale.size() ; i++) 
-			B[i] = listeFinale.get(i);	
+			B[i] = listeFinale.get(i);
 		N = B.length ;
 	}
 	
@@ -49,7 +48,7 @@ public class Methodes3PPVCosinus
 		// M est le nombre de commandes vocales que l'on a dans la base de donnees
 	
 	
-	public Methodes3PPVCosinus()
+	public Methodes1PPVTFIDF()
 	{
 		// phrase pour les boutons de l'interface
 		toutesLesPhrases.add("commencer");
@@ -249,104 +248,23 @@ public class Methodes3PPVCosinus
 	}
 	
 	
-	public static int commandeLaPlusProbable(int[] tabl)
+	public static int tableauLePlusProche(int[] tabl)
 	{
 		int i;
-		int indicePlusProche1=0;
-		int indicePlusProche2=1;
-		int indicePlusProche3=2;
-		int indiceCommande1 ;
-		int indiceCommande2 ;
-		int indiceCommande3 ;
-		int indicePlusProbable = 0;
-			// les trois indices du tableau de la base de données les plus proches du tableaux tabl
-		double psPlusGrand1;
-		double psPlusGrand2;
-		double psPlusGrand3;
-			//ps normes de tabl et des tableaux les plus proches de tabl
-		psPlusGrand1 = comparateurDeDeuxTableaux(tabl , tableauDeTableaux[0]);
-		psPlusGrand2 = comparateurDeDeuxTableaux(tabl , tableauDeTableaux[1]);
-		psPlusGrand3 = comparateurDeDeuxTableaux(tabl , tableauDeTableaux[2]);
-		// on suppose que les trois premiers sont dans l'ordre
+		int indicePlusProche=0; 
+			// indice du tableau de la base de données le plus proche du tableau tabl
+		double psPlusGrand;
+			//ps norme de tabl et du tableau le plus proche de tabl
+		psPlusGrand = comparateurDeDeuxTableaux(tabl , tableauDeTableaux[0]);
 		
-		
-		/** on classe 0 et 1 */
-		if (psPlusGrand1 < psPlusGrand2 )
-		{
-			psPlusGrand1 = comparateurDeDeuxTableaux(tabl, tableauDeTableaux[1]); 
-			psPlusGrand2 = comparateurDeDeuxTableaux(tabl, tableauDeTableaux[0]); 
-			indicePlusProche1 = 1 ;
-			indicePlusProche2 = 0 ;
-		}
-		
-		/** on classe 2 par rapport à 0 et 1 */
-		if (psPlusGrand2 < psPlusGrand3 )
-		{
-			if(psPlusGrand1 < psPlusGrand3 )
-			{
-				psPlusGrand3 = psPlusGrand2;
-				psPlusGrand2 = psPlusGrand1;
-				psPlusGrand1 = comparateurDeDeuxTableaux(tabl, tableauDeTableaux[2]); 
-				indicePlusProche3 = indicePlusProche2 ;
-				indicePlusProche2 = indicePlusProche1 ;
-				indicePlusProche1 = 2 ;
-			}
-			else 
-			{
-				psPlusGrand3 = psPlusGrand2; 
-				psPlusGrand2 = comparateurDeDeuxTableaux(tabl, tableauDeTableaux[2]); 
-				indicePlusProche3 = indicePlusProche2 ;
-				indicePlusProche2 = 2 ;
-			}
-			
-		}
-		
-			
-			
 		for (i=1 ; i<M ; i++)
-			if (psPlusGrand3 < comparateurDeDeuxTableaux(tabl , tableauDeTableaux[i]) )
+			if (psPlusGrand < comparateurDeDeuxTableaux(tabl , tableauDeTableaux[i]) )
 			{
-				if(psPlusGrand2 < comparateurDeDeuxTableaux(tabl , tableauDeTableaux[i]) )
-				{
-					if(psPlusGrand1 < comparateurDeDeuxTableaux(tabl , tableauDeTableaux[i]) )
-					{
-						psPlusGrand3 = psPlusGrand2;
-						psPlusGrand2 = psPlusGrand1;
-						psPlusGrand1 = comparateurDeDeuxTableaux(tabl, tableauDeTableaux[i]); 
-						indicePlusProche3 = indicePlusProche2 ;
-						indicePlusProche2 = indicePlusProche1 ;
-						indicePlusProche1 = i ;
-					}
-					else 
-					{
-						psPlusGrand3 = psPlusGrand2; 
-						psPlusGrand2 = comparateurDeDeuxTableaux(tabl, tableauDeTableaux[i]); 
-						indicePlusProche3 = indicePlusProche2 ;
-						indicePlusProche2 = i ;
-					}
-				
-				}
-				else 
-				{
-					psPlusGrand3 = comparateurDeDeuxTableaux(tabl, tableauDeTableaux[i]); 
-					indicePlusProche3 = i ;
-				}
+				psPlusGrand = comparateurDeDeuxTableaux(tabl, tableauDeTableaux[i]); 
+				indicePlusProche = i ;
 			}	
 		
-		
-		indiceCommande1 = correspondanceClasseAction(indicePlusProche1) ;
-		indiceCommande2 = correspondanceClasseAction(indicePlusProche2) ;
-		indiceCommande3 = correspondanceClasseAction(indicePlusProche3) ;
-		
-		
-		indicePlusProbable = indiceCommande1 ;
-			//commande par défaut
-		if (indiceCommande2==indiceCommande3 ) // alors on choisit la commande 2 = commande 3
-		{
-			indicePlusProbable = indiceCommande2;
-		}
-		
-		return (indicePlusProbable);
+		return (indicePlusProche);
 		
 	}
 	
