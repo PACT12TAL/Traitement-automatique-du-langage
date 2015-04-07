@@ -20,23 +20,31 @@ public class Methodes1PPVCosinus
 	public static void remplirTableauB () 
 	{
 		ArrayList<String> listeFinale = new ArrayList<String>();
+		listeFinale.add("je");
+		
 		for ( String phrase : toutesLesPhrases)
 		{
 			ArrayList<String> mot = creerCommande(phrase);
+			
 			for(String motDeVoc : mot)
 			{
+				boolean testappartenance = false;
 				for(String motExistant : listeFinale)
 				{
-					if(!(motExistant.equals(motDeVoc)))
-						listeFinale.add(motDeVoc);
+					if((motExistant.equals(motDeVoc)))
+						testappartenance = true ;
 				}
 				
+				if (!testappartenance) 
+					listeFinale.add(motDeVoc);
 			}
 		}
 		B = new String[listeFinale.size()];
 		for (int i=0 ; i < listeFinale.size() ; i++) 
 			B[i] = listeFinale.get(i);
+		
 		N = B.length ;
+		
 	}
 	
 	
@@ -103,10 +111,15 @@ public class Methodes1PPVCosinus
 		M = toutesLesPhrases.size();
 			// M est le nombre de commandes vocales que l'on a dans la base de donnees
 		
+		remplirTableauB() ;
+		System.err.println("fsdf"+N+" "+M);
+		tableauDeTableaux = new int[N][M];
+		remplirTableauDeTableaux() ;
+		
 	}
 	
 	
-	private static int[][] tableauDeTableaux = new int[N][M];
+	private static int[][] tableauDeTableaux ;
 	
 	public static void remplirTableauDeTableaux()
 	{
@@ -201,7 +214,10 @@ public class Methodes1PPVCosinus
 		// cette mŽthode permet de savoir si un mot est dans la base de donnees B 
 		// elle retourne le numero de la case dans laquelle est le lemme
 		// si le mot n'est pas dans le mot renvoie N
+		
 		int i = 0;
+		System.out.println(B.length);
+		
 		while (!mot.toLowerCase().equals(B[i].toLowerCase()) && i!=(N-1))
 			i+=1;
 		
@@ -321,7 +337,11 @@ public class Methodes1PPVCosinus
 		
 		case 37 :
 			indiceClasseAction = 20;
-		break;		
+		break;
+		
+		case 17 :
+			indiceClasseAction = 200;
+		break;
 		
 		default :
 			indiceClasseAction = -1;

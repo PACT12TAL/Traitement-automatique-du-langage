@@ -4,14 +4,18 @@ import java.util.ArrayList;
 
 
 public class Main1PPVCosinus {
-	
+
 	public static void main(String[] args) 
 	{	
+		
 		// acquérir le point WAV
 		//l'envoyer à l'API google
 		//on recoit une phrase que l'on nomme parole
 		
-	String parole="vous auriez un pull d'une autre couleur";
+		new Methodes1PPVCosinus();
+	
+	
+	String parole="ajouter au panier";
 	
 	
 	int[] T = new int[Methodes1PPVCosinus.N]; 
