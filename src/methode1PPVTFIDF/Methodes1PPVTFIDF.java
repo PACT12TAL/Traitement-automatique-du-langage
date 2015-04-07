@@ -36,9 +36,9 @@ public class Methodes1PPVTFIDF
 		B = new String[listeFinale.size()];
 		for (int i=0 ; i < listeFinale.size() ; i++) 
 			B[i] = listeFinale.get(i);
+		
 		N = B.length ;
 	}
-	
 	
 	
 	public static ArrayList<String> toutesLesPhrases= new ArrayList<String>();
