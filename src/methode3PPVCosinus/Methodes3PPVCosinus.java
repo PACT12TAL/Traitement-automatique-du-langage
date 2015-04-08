@@ -18,26 +18,33 @@ public class Methodes3PPVCosinus
 	
 
 	
-	public static void remplirTableauC () 
+	public static void remplirTableauB () 
 	{
 		ArrayList<String> listeFinale = new ArrayList<String>();
+		listeFinale.add("je");
+		
 		for ( String phrase : toutesLesPhrases)
 		{
 			ArrayList<String> mot = creerCommande(phrase);
+			
 			for(String motDeVoc : mot)
 			{
+				boolean testappartenance = false;
 				for(String motExistant : listeFinale)
 				{
-					if(!(motExistant.equals(motDeVoc)))
-						listeFinale.add(motDeVoc);
+					if((motExistant.equals(motDeVoc)))
+						testappartenance = true ;
 				}
-				
+				if (!testappartenance) 
+					listeFinale.add(motDeVoc);
 			}
 		}
 		B = new String[listeFinale.size()];
 		for (int i=0 ; i < listeFinale.size() ; i++) 
-			B[i] = listeFinale.get(i);	
+			B[i] = listeFinale.get(i);
+		
 		N = B.length ;
+		
 	}
 	
 	
@@ -105,9 +112,11 @@ public class Methodes3PPVCosinus
 		// M est le nombre de commandes vocales que l'on a dans la base de donnees
 		
 		
+		remplirTableauB() ;
+		tableauDeTableaux = new int[N][M];
+		remplirTableauDeTableaux() ;
+		
 	}
-	
-	
 	
 	
 	
@@ -122,10 +131,6 @@ public class Methodes3PPVCosinus
 			}
 	}
 			
-	
-	public String phrase;
-		// phrase est la phrase a analyser en un seul string fourni par l'API google
-	
 	
 	
 	public static ArrayList<String> creerCommande(String phrase)
@@ -192,7 +197,6 @@ public class Methodes3PPVCosinus
 	}
 
 
-
 	
 	public static void initT(int[] T)
 	{
@@ -201,12 +205,14 @@ public class Methodes3PPVCosinus
 			T[i] = 0;
 	}
 	
+	
 	public static int reconnaissanceMot(String mot)
 	{
 		// cette méthode permet de savoir si un mot est dans la base de donnees B 
 		// elle retourne le numero de la case dans laquelle est le lemme
 		// si le mot n'est pas dans le mot renvoie N
 		int i = 0;
+		
 		while (!mot.toLowerCase().equals(B[i].toLowerCase()) && i!=(N-1))
 			i+=1;
 		
@@ -215,6 +221,7 @@ public class Methodes3PPVCosinus
 		
 		return i;
 	}
+	
 	
 	public static void incrementationTableau(int i, int[] tab)
 	{

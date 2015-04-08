@@ -2,16 +2,19 @@ package methode3PPVCosinus;
 
 import java.util.ArrayList;
 
-import methode3PPVCosinus.Methodes3PPVCosinus;
 
 
 public class Main3PPVCosinus {
 	
 	public static void main(String[] args) 
 	{	
+		
 		// acquérir le point WAV
 		//l'envoyer à l'API google
 		//on recoit une phrase que l'on nomme parole
+	
+		new Methodes3PPVCosinus();
+	
 		
 	String parole="essayer le pull";
 	
