@@ -2,10 +2,9 @@ package methode1PPVTFIDF;
 
 import java.util.ArrayList;
 
+
 public class Methodes1PPVTFIDF 
 {
-
-
 	// toute la méthode est implémentée dans le meme classe
 	// creer plusieurs classes pour chaque objet ici comme une classe base de données, une classe tableau d'analyse... rend les transferts entre classes inutilement diffi
 
@@ -20,17 +19,22 @@ public class Methodes1PPVTFIDF
 	public static void remplirTableauB () 
 	{
 		ArrayList<String> listeFinale = new ArrayList<String>();
+		listeFinale.add("je");
+		
 		for ( String phrase : toutesLesPhrases)
 		{
 			ArrayList<String> mot = creerCommande(phrase);
+			
 			for(String motDeVoc : mot)
 			{
+				boolean testappartenance = false;
 				for(String motExistant : listeFinale)
 				{
-					if(!(motExistant.equals(motDeVoc)))
-						listeFinale.add(motDeVoc);
+					if((motExistant.equals(motDeVoc)))
+						testappartenance = true ;
 				}
-				
+				if (!testappartenance) 
+					listeFinale.add(motDeVoc);
 			}
 		}
 		B = new String[listeFinale.size()];
@@ -38,7 +42,9 @@ public class Methodes1PPVTFIDF
 			B[i] = listeFinale.get(i);
 		
 		N = B.length ;
+		
 	}
+	
 	
 	
 	public static ArrayList<String> toutesLesPhrases= new ArrayList<String>();
@@ -103,12 +109,18 @@ public class Methodes1PPVTFIDF
 		M = toutesLesPhrases.size() ;
 			// M est le nombre de commandes vocales que l'on a dans la base de donnees
 		
+		
+		remplirTableauB() ;
+		DF = new int [N] ;
+		remplirDF();
+		tableauDeTableaux = new double[N][M];
+		remplirTableauDeTableaux() ;
+		
 	}
 	
 	
-	
 
-	private static int[] DF = new int [N] ;
+	private static int[] DF ;
 	
 	public static void remplirDF()
 	{
@@ -134,22 +146,24 @@ public class Methodes1PPVTFIDF
 		}
 	}
 	
+	 
 	
-	private static int[][] tableauDeTableaux = new int[N][M];
+	private static double[][] tableauDeTableaux ;
 	
 	public static void remplirTableauDeTableaux()
 	{
 		for (int j=0;j<toutesLesPhrases.size();j++)
 			{
-				int[] T = TableauAnalyse(creerCommande(toutesLesPhrases.get(j)));
+				double [] U = TableauAnalyse(creerCommande(toutesLesPhrases.get(j)));
+					// la méthode TableauAnalyse code la partie term frequency
+				double[] T = new double [N] ;
+				for ( int i=0 ; i<N ; i++ )
+					T[i] = (U[i] / DF[i]) ;
+
 				tableauDeTableaux[j]=T;
 			}
 	}
 			
-	
-	public String phrase;
-		// phrase est la phrase a analyser en un seul string fourni par l'API google
-	
 	
 	
 	public static ArrayList<String> creerCommande(String phrase)
@@ -216,14 +230,14 @@ public class Methodes1PPVTFIDF
 	}
 
 
-
 	
-	public static void initT(int[] T)
+	public static void initT(double[] tableau)
 	{
 		//initialise les cases du tableau T a zero pour éviter les mauvaises surprises
 		for (int i=0 ; i<N ; i++ )
-			T[i] = 0;
+			tableau[i] = 0;
 	}
+	
 	
 	public static int reconnaissanceMot(String mot)
 	{
@@ -240,24 +254,26 @@ public class Methodes1PPVTFIDF
 		return i;
 	}
 	
-	public static void incrementationTableau(int i, int[] tab)
+	
+	public static void incrementationTableau(int i, double[] tab)
 	{
 		if (i>=0 && i<N)
 				tab[i] += 1;
 	}
 	
 	
-	public static int[] TableauAnalyse(ArrayList<String> commande) 
+	public static double[] TableauAnalyse(ArrayList<String> commande) 
 	{
-		 int[] tableau = new int[N];
+		 double[] tableau = new double[N];
 		initT(tableau);
 		for (String mot: commande)
 			incrementationTableau(reconnaissanceMot(mot),tableau);	
 		return tableau;
 	}
-
 	
-	public static double comparateurDeDeuxTableaux (int[] tab1, int[] tab2)
+	
+	
+	public static double comparateurDeDeuxTableaux (double[] tab1, double[] tab2)
 	{
 		double normTab1 = 0;
 		double normTab2 = 0;
@@ -275,12 +291,12 @@ public class Methodes1PPVTFIDF
 		for (k=0 ; k<N ; k++)
 			 ps += ((tab1[k])*(tab2[k]));
 		
-		return ((ps+0.0)/(Math.sqrt(normTab1*normTab2)));
+		return ((ps)/(Math.sqrt(normTab1*normTab2)));
 			// renvoie le ps norme
 	}
 	
 	
-	public static int tableauLePlusProche(int[] tabl)
+	public static int tableauLePlusProche(double[] tabl)
 	{
 		int i;
 		int indicePlusProche=0; 
