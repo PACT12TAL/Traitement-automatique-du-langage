@@ -34,7 +34,6 @@ public class Methodes1PPVCosinus
 					if((motExistant.equals(motDeVoc)))
 						testappartenance = true ;
 				}
-				
 				if (!testappartenance) 
 					listeFinale.add(motDeVoc);
 			}
@@ -111,8 +110,8 @@ public class Methodes1PPVCosinus
 		M = toutesLesPhrases.size();
 			// M est le nombre de commandes vocales que l'on a dans la base de donnees
 		
+		
 		remplirTableauB() ;
-		System.err.println("fsdf"+N+" "+M);
 		tableauDeTableaux = new int[N][M];
 		remplirTableauDeTableaux() ;
 		
@@ -130,10 +129,6 @@ public class Methodes1PPVCosinus
 			}
 	}
 			
-	
-	public String phrase;
-		// phrase est la phrase a analyser en un seul string fourni par l'API google
-	
 	
 	
 	public static ArrayList<String> creerCommande(String phrase)
@@ -200,7 +195,6 @@ public class Methodes1PPVCosinus
 	}
 
 
-
 	
 	public static void initT(int[] T)
 	{
@@ -209,6 +203,7 @@ public class Methodes1PPVCosinus
 			T[i] = 0;
 	}
 	
+	
 	public static int reconnaissanceMot(String mot)
 	{
 		// cette méthode permet de savoir si un mot est dans la base de donnees B 
@@ -216,7 +211,6 @@ public class Methodes1PPVCosinus
 		// si le mot n'est pas dans le mot renvoie N
 		
 		int i = 0;
-		System.out.println(B.length);
 		
 		while (!mot.toLowerCase().equals(B[i].toLowerCase()) && i!=(N-1))
 			i+=1;
@@ -226,6 +220,7 @@ public class Methodes1PPVCosinus
 		
 		return i;
 	}
+
 	
 	public static void incrementationTableau(int i, int[] tab)
 	{
