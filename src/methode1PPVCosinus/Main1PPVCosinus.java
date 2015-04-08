@@ -32,7 +32,7 @@ public class Main1PPVCosinus {
 	int indiceAction = Methodes1PPVCosinus.correspondanceClasseAction(indiceCommande);
 	
 	System.out.println(indiceCommande);
-	System.out.println(indiceAction);
+	System.out.println(indiceAction); // indice a recuperer pour l'intégration
 	System.out.println(Methodes1PPVCosinus.toutesLesPhrases.get(indiceCommande));
 	
 
