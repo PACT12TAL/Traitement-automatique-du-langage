@@ -334,9 +334,6 @@ public class Methodes1PPVCosinus
 			indiceClasseAction = 20;
 		break;
 		
-		case 17 :
-			indiceClasseAction = 200;
-		break;
 		
 		default :
 			indiceClasseAction = -1;
