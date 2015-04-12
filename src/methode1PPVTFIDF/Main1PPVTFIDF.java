@@ -17,7 +17,7 @@ public class Main1PPVTFIDF {
 		
 		new Methodes1PPVTFIDF();
 		
-		String parole="je voudrais commencer";
+		String parole="essayer le vêtement";
 		
 		
 		double[] T = new double[Methodes1PPVTFIDF.N]; 
