@@ -19,7 +19,7 @@ public class Methodes1PPVTFIDF
 	public static void remplirTableauB () 
 	{
 		ArrayList<String> listeFinale = new ArrayList<String>();
-		listeFinale.add("je");
+		listeFinale.add("panier");
 		
 		for ( String phrase : toutesLesPhrases)
 		{
@@ -158,7 +158,7 @@ public class Methodes1PPVTFIDF
 					// la méthode TableauAnalyse code la partie term frequency
 				double[] T = new double [N] ;
 				for ( int i=0 ; i<N ; i++ )
-					T[i] = (U[i] / DF[i]) ;
+					T[i] = (U[i]* Math.log(2*N / DF[i])) ;
 
 				tableauDeTableaux[j]=T;
 			}
@@ -224,7 +224,8 @@ public class Methodes1PPVTFIDF
 			}
 				
 		}
-		liste.add(currentWord);
+		if ( !currentWord.equals("") )
+			liste.add(currentWord);
 		
 		return liste;
 	}
