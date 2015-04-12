@@ -21,7 +21,7 @@ public class Methodes3PPVCosinus
 	public static void remplirTableauB () 
 	{
 		ArrayList<String> listeFinale = new ArrayList<String>();
-		listeFinale.add("je");
+		listeFinale.add("panier");
 		
 		for ( String phrase : toutesLesPhrases)
 		{
