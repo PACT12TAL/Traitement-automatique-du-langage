@@ -223,7 +223,8 @@ public class Methodes3PPVTFIDF
 			}
 				
 		}
-		liste.add(currentWord);
+		if ( !currentWord.equals("") )
+			liste.add(currentWord);
 		
 		return liste;
 	}

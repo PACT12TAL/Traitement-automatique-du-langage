@@ -189,7 +189,8 @@ public class Methodes1PPVCosinus
 			}
 				
 		}
-		liste.add(currentWord);
+		if ( !currentWord.equals("") )
+			liste.add(currentWord);
 		
 		return liste;
 	}
