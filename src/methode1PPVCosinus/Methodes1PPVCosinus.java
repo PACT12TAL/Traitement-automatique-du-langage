@@ -2,7 +2,6 @@ package methode1PPVCosinus;
 import java.util.ArrayList;
 
 
-
 public class Methodes1PPVCosinus 
 {
 	// toute la méthode est implémentée dans le meme classe
@@ -15,7 +14,7 @@ public class Methodes1PPVCosinus
 		// valeur a changer. 
 		// N est le nombre de lemmes ou de mots
 	
-
+	
 	
 	public static void remplirTableauB () 
 	{
@@ -58,44 +57,6 @@ public class Methodes1PPVCosinus
 	public Methodes1PPVCosinus()
 	{
 		// phrase pour les boutons de l'interface
-		toutesLesPhrases.add("zéro");
-		toutesLesPhrases.add("un");
-		toutesLesPhrases.add("deux");
-		toutesLesPhrases.add("trois");
-		toutesLesPhrases.add("quatre");
-		toutesLesPhrases.add("cinq");
-		toutesLesPhrases.add("six");
-		toutesLesPhrases.add("sept");
-		toutesLesPhrases.add("huit");
-		toutesLesPhrases.add("neuf");
-		
-		toutesLesPhrases.add("a");
-		toutesLesPhrases.add("b");
-		toutesLesPhrases.add("c");
-		toutesLesPhrases.add("d");
-		toutesLesPhrases.add("e");
-		toutesLesPhrases.add("f");
-		toutesLesPhrases.add("g");
-		toutesLesPhrases.add("h");
-		toutesLesPhrases.add("i");
-		toutesLesPhrases.add("j");
-		toutesLesPhrases.add("k");
-		toutesLesPhrases.add("l");
-		toutesLesPhrases.add("m");
-		toutesLesPhrases.add("n");
-		toutesLesPhrases.add("o");
-		toutesLesPhrases.add("p");
-		toutesLesPhrases.add("q");
-		toutesLesPhrases.add("r");
-		toutesLesPhrases.add("s");
-		toutesLesPhrases.add("t");
-		toutesLesPhrases.add("u");
-		toutesLesPhrases.add("v");
-		toutesLesPhrases.add("w");
-		toutesLesPhrases.add("x");
-		toutesLesPhrases.add("y");
-		toutesLesPhrases.add("z");
-		
 		toutesLesPhrases.add("commencer");
 		toutesLesPhrases.add("on commence");
 		toutesLesPhrases.add("commençons");
@@ -108,6 +69,17 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais bien commencer");
 		toutesLesPhrases.add("Je souhaite commencer");
 		
+		toutesLesPhrases.add("a propos");
+		toutesLesPhrases.add("voir a propos");
+		toutesLesPhrases.add("aller dans a propos");
+		toutesLesPhrases.add("J'aimerais aller dans a propos");
+		toutesLesPhrases.add("J'aimerais bien aller dans a propos");
+		toutesLesPhrases.add("Je veux aller dans a propos");
+		toutesLesPhrases.add("Je veux bien aller dans a propos");
+		toutesLesPhrases.add("Je voudrais aller dans a propos");
+		toutesLesPhrases.add("Je voudrais bien aller dans a propos");
+		toutesLesPhrases.add("Je souhaite aller dans a propos");
+		
 		toutesLesPhrases.add("quitter");
 		toutesLesPhrases.add("J'aimerais quitter");
 		toutesLesPhrases.add("J'aimerais bien quitter");
@@ -116,12 +88,136 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais quitter");
 		toutesLesPhrases.add("Je voudrais bien quitter");
 		toutesLesPhrases.add("Je souhaite quitter");
+		toutesLesPhrases.add("arrêter");
+		toutesLesPhrases.add("J'aimerais arrêter");
+		toutesLesPhrases.add("J'aimerais bien arrêter");
+		toutesLesPhrases.add("Je veux arrêter");
+		toutesLesPhrases.add("Je veux bien arrêter");
+		toutesLesPhrases.add("Je voudrais arrêter");
+		toutesLesPhrases.add("Je voudrais bien arrêter");
+		toutesLesPhrases.add("Je souhaite arrêter");
+		
+		toutesLesPhrases.add("zéro");
+		toutesLesPhrases.add("un");
+		toutesLesPhrases.add("deux");
+		toutesLesPhrases.add("trois");
+		toutesLesPhrases.add("quatre");
+		toutesLesPhrases.add("cinq");
+		toutesLesPhrases.add("six");
+		toutesLesPhrases.add("sept");
+		toutesLesPhrases.add("huit");
+		toutesLesPhrases.add("neuf");
+		
+		toutesLesPhrases.add("nouveau compte");
+		toutesLesPhrases.add("créer un nouveau compte");
+		toutesLesPhrases.add("J'aimerais créer un nouveau compte");
+		toutesLesPhrases.add("J'aimerais bien créer un nouveau compte");
+		toutesLesPhrases.add("Je veux créer un nouveau compter");
+		toutesLesPhrases.add("Je veux bien créer un nouveau compte");
+		toutesLesPhrases.add("Je voudrais créer un nouveau compte");
+		toutesLesPhrases.add("Je voudrais bien créer un nouveau compte");
+		toutesLesPhrases.add("Je souhaite créer un nouveau compte");
+		
+		toutesLesPhrases.add("ouvrir un nouveau compte");
+		toutesLesPhrases.add("J'aimerais ouvrir un nouveau compte");
+		toutesLesPhrases.add("J'aimerais bien ouvrir un nouveau compte");
+		toutesLesPhrases.add("Je veux ouvrir un nouveau compter");
+		toutesLesPhrases.add("Je veux bien ouvrir un nouveau compte");
+		toutesLesPhrases.add("Je voudrais ouvrir un nouveau compte");
+		toutesLesPhrases.add("Je voudrais bien ouvrir un nouveau compte");
+		toutesLesPhrases.add("Je souhaite ouvrir un nouveau compte");
+		
+		toutesLesPhrases.add("supprimer compte");
+		toutesLesPhrases.add("supprimer le compte");
+		toutesLesPhrases.add("J'aimerais supprimer le compte");
+		toutesLesPhrases.add("J'aimerais bien supprimer le compte");
+		toutesLesPhrases.add("Je veux supprimer le compter");
+		toutesLesPhrases.add("Je veux bien supprimer le compte");
+		toutesLesPhrases.add("Je voudrais supprimer le compte");
+		toutesLesPhrases.add("Je voudrais bien supprimer le compte");
+		toutesLesPhrases.add("Je souhaite supprimer le compte");		
+		
+		
+		toutesLesPhrases.add("a");
+		toutesLesPhrases.add("z");
+		toutesLesPhrases.add("e");
+		toutesLesPhrases.add("r");
+		toutesLesPhrases.add("t");
+		toutesLesPhrases.add("y");
+		toutesLesPhrases.add("u");
+		toutesLesPhrases.add("i");
+		toutesLesPhrases.add("o");
+		toutesLesPhrases.add("p");
+		toutesLesPhrases.add("q");
+		toutesLesPhrases.add("s");
+		toutesLesPhrases.add("d");
+		toutesLesPhrases.add("f");
+		toutesLesPhrases.add("g");
+		toutesLesPhrases.add("h");
+		toutesLesPhrases.add("j");
+		toutesLesPhrases.add("k");
+		toutesLesPhrases.add("l");
+		toutesLesPhrases.add("m");
+		toutesLesPhrases.add("w");
+		toutesLesPhrases.add("x");
+		toutesLesPhrases.add("c");
+		toutesLesPhrases.add("v");
+		toutesLesPhrases.add("b");
+		toutesLesPhrases.add("n");
+		toutesLesPhrases.add("espace");
+		toutesLesPhrases.add("effacer");
+		toutesLesPhrases.add("J'aimerais effacer");
+		toutesLesPhrases.add("J'aimerais bien effacer");
+		toutesLesPhrases.add("Je veux effacer");
+		toutesLesPhrases.add("Je veux bien effacer");
+		toutesLesPhrases.add("Je voudrais effacer");
+		toutesLesPhrases.add("Je voudrais bien effacer");
+		toutesLesPhrases.add("Je souhaite effacer");	
 		
 		toutesLesPhrases.add("retour");
 		toutesLesPhrases.add("page précédente");
+		toutesLesPhrases.add("revenir");
+		toutesLesPhrases.add("revenir à la page précédente");
+		toutesLesPhrases.add("J'aimerais revenir à la page précédente");
+		toutesLesPhrases.add("J'aimerais bien revenir à la page précédente");
+		toutesLesPhrases.add("Je veux revenir à la page précédente");
+		toutesLesPhrases.add("Je veux bien revenir à la page précédente");
+		toutesLesPhrases.add("Je voudrais revenir à la page précédente");
+		toutesLesPhrases.add("Je voudrais bien revenir à la page précédente");
+		toutesLesPhrases.add("Je souhaite revenir à la page précédente");
+		
+		
+		
 		toutesLesPhrases.add("précédent");
+		toutesLesPhrases.add("vêtement précédent");
+		toutesLesPhrases.add("voir le vêtement précédent");
+		toutesLesPhrases.add("J'aimerais voir le vêtement précédent");
+		toutesLesPhrases.add("J'aimerais bien voir le vêtement précédent");
+		toutesLesPhrases.add("Je veux voir le vêtement précédent");
+		toutesLesPhrases.add("Je veux bien voir le vêtement précédent");
+		toutesLesPhrases.add("Je voudrais voir le vêtement précédent");
+		toutesLesPhrases.add("Je voudrais bien voir le vêtement précédent");
+		toutesLesPhrases.add("Je souhaite voir le vêtement précédent");
+		
 		toutesLesPhrases.add("suivant");
+		toutesLesPhrases.add("vêtement suivant");
+		toutesLesPhrases.add("voir le vêtement suivant");
+		toutesLesPhrases.add("J'aimerais voir le vêtement suivant");
+		toutesLesPhrases.add("J'aimerais bien voir le vêtement suivant");
+		toutesLesPhrases.add("Je veux voir le vêtement suivant");
+		toutesLesPhrases.add("Je veux bien voir le vêtement suivant");
+		toutesLesPhrases.add("Je voudrais voir le vêtement suivant");
+		toutesLesPhrases.add("Je voudrais bien voir le vêtement suivant");
+		toutesLesPhrases.add("Je souhaite voir le vêtement suivant");
+		
 		toutesLesPhrases.add("ok");
+		toutesLesPhrases.add("valider");
+		toutesLesPhrases.add("oui");
+		toutesLesPhrases.add("ouais");
+		toutesLesPhrases.add("ouais ouais");
+		toutesLesPhrases.add("non");
+		toutesLesPhrases.add("non non");
+		
 		
 	
 		// phrase d'accès au catalogue 
@@ -166,13 +262,22 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je veux bien voir le catalogue");
 		toutesLesPhrases.add("Je veux bien aller voir le catalogue");
 		toutesLesPhrases.add("Je veux bien consulter le catalogue");
+		
+		toutesLesPhrases.add("quitter le catalogue");
+		toutesLesPhrases.add("J'aimerais quitter le catalogue");
+		toutesLesPhrases.add("J'aimerais bien quitter le catalogue");
+		toutesLesPhrases.add("Je veux quitter le catalogue");
+		toutesLesPhrases.add("Je veux bien quitter le catalogue");
+		toutesLesPhrases.add("Je voudrais quitter le catalogue");
+		toutesLesPhrases.add("Je voudrais bien quitter le catalogue");
+		toutesLesPhrases.add("Je souhaite quitter le catalogue");
 
 		
 		//commande avec le panier
 		toutesLesPhrases.add("Ajouter au panier");
 		toutesLesPhrases.add("J'aimerais ajouter au panier");
 		toutesLesPhrases.add("J'aimerais bien ajouter au panier");
-		toutesLesPhrases.add("Je veux consulter ajouter au panier");
+		toutesLesPhrases.add("Je veux ajouter au panier");
 		toutesLesPhrases.add("Je veux bien ajouter au panier");
 		toutesLesPhrases.add("Je voudrais ajouter au panier");
 		toutesLesPhrases.add("Je voudrais bien ajouter au panier");
@@ -257,6 +362,15 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais bien enlever du panier");
 		toutesLesPhrases.add("Je souhaite enlever du panier");
 		
+		toutesLesPhrases.add("supprimer du panier");
+		toutesLesPhrases.add("J'aimerais supprimer du panier");
+		toutesLesPhrases.add("J'aimerais bien supprimer du panier");
+		toutesLesPhrases.add("Je veux consulter supprimer du panier");
+		toutesLesPhrases.add("Je veux bien supprimer du panier");
+		toutesLesPhrases.add("Je voudrais supprimer du panier");
+		toutesLesPhrases.add("Je voudrais bien supprimer du panier");
+		toutesLesPhrases.add("Je souhaite supprimer du panier");
+		
 		// toutesLesPhrases.add("Payer"); 			L'interface graphique ne prend pas en compte le paiement
 		// toutesLesPhrases.add("Payer le panier");
 		// toutesLesPhrases.add("Régler ma commande");
@@ -264,7 +378,12 @@ public class Methodes1PPVCosinus
 		
 		
 		//commande pour visualiser un vêtement
-		toutesLesPhrases.add("Demander un vêtement");
+		
+		toutesLesPhrases.add("pull");
+		toutesLesPhrases.add("robe");
+		toutesLesPhrases.add("tee shirt");
+		toutesLesPhrases.add("pantalon ");
+		
 		toutesLesPhrases.add("Changer de vêtement");
 		toutesLesPhrases.add("Changer la couleur");
 		toutesLesPhrases.add("Changer la taille");
@@ -275,6 +394,9 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("pull");
 		toutesLesPhrases.add("Changer de pull");
 		toutesLesPhrases.add("essayer le pull");
+		
+		// toutesLesPhrases.add("Demander un vêtement");       la commande n'est plus utile car on oriente le projet pour des particuliers
+		
 		
 		
 		
