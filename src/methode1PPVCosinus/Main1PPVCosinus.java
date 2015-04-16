@@ -15,7 +15,7 @@ public class Main1PPVCosinus {
 		new Methodes1PPVCosinus();
 	
 	
-		String parole="je voudrais commencer";
+		String parole="je voudrais accéder au panier";
 	
 	
 		int[] T = new int[Methodes1PPVCosinus.N]; 
