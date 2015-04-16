@@ -58,38 +58,209 @@ public class Methodes1PPVCosinus
 	public Methodes1PPVCosinus()
 	{
 		// phrase pour les boutons de l'interface
+		toutesLesPhrases.add("z屍o");
+		toutesLesPhrases.add("un");
+		toutesLesPhrases.add("deux");
+		toutesLesPhrases.add("trois");
+		toutesLesPhrases.add("quatre");
+		toutesLesPhrases.add("cinq");
+		toutesLesPhrases.add("six");
+		toutesLesPhrases.add("sept");
+		toutesLesPhrases.add("huit");
+		toutesLesPhrases.add("neuf");
+		
+		toutesLesPhrases.add("a");
+		toutesLesPhrases.add("b");
+		toutesLesPhrases.add("c");
+		toutesLesPhrases.add("d");
+		toutesLesPhrases.add("e");
+		toutesLesPhrases.add("f");
+		toutesLesPhrases.add("g");
+		toutesLesPhrases.add("h");
+		toutesLesPhrases.add("i");
+		toutesLesPhrases.add("j");
+		toutesLesPhrases.add("k");
+		toutesLesPhrases.add("l");
+		toutesLesPhrases.add("m");
+		toutesLesPhrases.add("n");
+		toutesLesPhrases.add("o");
+		toutesLesPhrases.add("p");
+		toutesLesPhrases.add("q");
+		toutesLesPhrases.add("r");
+		toutesLesPhrases.add("s");
+		toutesLesPhrases.add("t");
+		toutesLesPhrases.add("u");
+		toutesLesPhrases.add("v");
+		toutesLesPhrases.add("w");
+		toutesLesPhrases.add("x");
+		toutesLesPhrases.add("y");
+		toutesLesPhrases.add("z");
+		
 		toutesLesPhrases.add("commencer");
 		toutesLesPhrases.add("on commence");
+		toutesLesPhrases.add("commen腔ns");
+		toutesLesPhrases.add("allons y");
+		toutesLesPhrases.add("J'aimerais commencer");
+		toutesLesPhrases.add("J'aimerais bien commencer");
+		toutesLesPhrases.add("Je veux commencer");
+		toutesLesPhrases.add("Je veux bien commencer");
+		toutesLesPhrases.add("Je voudrais commencer");
+		toutesLesPhrases.add("Je voudrais bien commencer");
+		toutesLesPhrases.add("Je souhaite commencer");
+		
 		toutesLesPhrases.add("quitter");
+		toutesLesPhrases.add("J'aimerais quitter");
+		toutesLesPhrases.add("J'aimerais bien quitter");
+		toutesLesPhrases.add("Je veux quitter");
+		toutesLesPhrases.add("Je veux bien quitter");
+		toutesLesPhrases.add("Je voudrais quitter");
+		toutesLesPhrases.add("Je voudrais bien quitter");
+		toutesLesPhrases.add("Je souhaite quitter");
+		
 		toutesLesPhrases.add("retour");
 		toutesLesPhrases.add("page pr残仕ente");
 		toutesLesPhrases.add("pr残仕ent");
 		toutesLesPhrases.add("suivant");
 		toutesLesPhrases.add("ok");
-		toutesLesPhrases.add("trois");
 		
+	
 		// phrase d'acc峻 au catalogue 
 		toutesLesPhrases.add("Acc仕er au catalogue");
 		toutesLesPhrases.add("Retourner au catalogue");
 		toutesLesPhrases.add("Voir le catalogue");
 		toutesLesPhrases.add("consulter le catalogue");
+		toutesLesPhrases.add("aller sur le catalogue");
+		toutesLesPhrases.add("aller au catalogue");
 		toutesLesPhrases.add("J'aimerais acc仕er au catalogue");
 		toutesLesPhrases.add("J'aimerais retourner au catalogue");
 		toutesLesPhrases.add("J'aimerais voir le catalogue");
+		toutesLesPhrases.add("J'aimerais aller voir le catalogue");
 		toutesLesPhrases.add("J'aimerais consulter le catalogue");
-	
+		toutesLesPhrases.add("Je voudrais acc仕er au catalogue");
+		toutesLesPhrases.add("Je voudrais retourner au catalogue");
+		toutesLesPhrases.add("Je voudrais voir le catalogue");
+		toutesLesPhrases.add("Je voudrais aller voir le catalogue");
+		toutesLesPhrases.add("Je voudrais consulter le catalogue");
+		toutesLesPhrases.add("Je veux acc仕er au catalogue");
+		toutesLesPhrases.add("Je veux retourner au catalogue");
+		toutesLesPhrases.add("Je veux voir le catalogue");
+		toutesLesPhrases.add("Je veux aller voir le catalogue");
+		toutesLesPhrases.add("Je veux consulter le catalogue");
+		toutesLesPhrases.add("Je souhaite acc仕er au catalogue");
+		toutesLesPhrases.add("Je souhaite retourner au catalogue");
+		toutesLesPhrases.add("Je souhaite voir le catalogue");
+		toutesLesPhrases.add("Je souhaite aller voir le catalogue");
+		toutesLesPhrases.add("Je souhaite consulter le catalogue");
+		toutesLesPhrases.add("J'aimerais bien acc仕er au catalogue");
+		toutesLesPhrases.add("J'aimerais bien retourner au catalogue");
+		toutesLesPhrases.add("J'aimerais bien voir le catalogue");
+		toutesLesPhrases.add("J'aimerais bien aller voir le catalogue");
+		toutesLesPhrases.add("J'aimerais bien consulter le catalogue");
+		toutesLesPhrases.add("Je voudrais bien acc仕er au catalogue");
+		toutesLesPhrases.add("Je voudrais bien retourner au catalogue");
+		toutesLesPhrases.add("Je voudrais bien voir le catalogue");
+		toutesLesPhrases.add("Je voudrais bien aller voir le catalogue");
+		toutesLesPhrases.add("Je voudrais bien consulter le catalogue");
+		toutesLesPhrases.add("Je veux bien acc仕er au catalogue");
+		toutesLesPhrases.add("Je veux bien retourner au catalogue");
+		toutesLesPhrases.add("Je veux bien voir le catalogue");
+		toutesLesPhrases.add("Je veux bien aller voir le catalogue");
+		toutesLesPhrases.add("Je veux bien consulter le catalogue");
+
 		
 		//commande avec le panier
 		toutesLesPhrases.add("Ajouter au panier");
-		toutesLesPhrases.add("retirer du panier");
-		toutesLesPhrases.add("enlever du panier");
+		toutesLesPhrases.add("J'aimerais ajouter au panier");
+		toutesLesPhrases.add("J'aimerais bien ajouter au panier");
+		toutesLesPhrases.add("Je veux consulter ajouter au panier");
+		toutesLesPhrases.add("Je veux bien ajouter au panier");
+		toutesLesPhrases.add("Je voudrais ajouter au panier");
+		toutesLesPhrases.add("Je voudrais bien ajouter au panier");
+		toutesLesPhrases.add("Je souhaite ajouter au panier");
+		
+		toutesLesPhrases.add("Rajouter au panier");
+		toutesLesPhrases.add("J'aimerais rajouter au panier");
+		toutesLesPhrases.add("J'aimerais bien rajouter au panier");
+		toutesLesPhrases.add("Je veux consulter rajouter au panier");
+		toutesLesPhrases.add("Je veux bien rajouter au panier");
+		toutesLesPhrases.add("Je voudrais rajouter au panier");
+		toutesLesPhrases.add("Je voudrais bien rajouter au panier");
+		toutesLesPhrases.add("Je souhaite rajouter au panier");
+		
+		toutesLesPhrases.add("mettre dans le panier");
+		toutesLesPhrases.add("J'aimerais mettre dans le panier");
+		toutesLesPhrases.add("J'aimerais bien mettre dans le panier");
+		toutesLesPhrases.add("Je veux consulter mettre dans le panier");
+		toutesLesPhrases.add("Je veux bien mettre dans le panier");
+		toutesLesPhrases.add("Je voudrais mettre dans le panier");
+		toutesLesPhrases.add("Je voudrais bien mettre dans le panier");
+		toutesLesPhrases.add("Je souhaite mettre dans le panier");
+		
 		toutesLesPhrases.add("Acc仕er au panier");
+		toutesLesPhrases.add("J'aimerais acc仕er au panier");
+		toutesLesPhrases.add("J'aimerais bien acc仕er au panier");
+		toutesLesPhrases.add("Je veux consulter acc仕er au panier");
+		toutesLesPhrases.add("Je veux bien acc仕er au panier");
+		toutesLesPhrases.add("Je voudrais acc仕er au panier");
+		toutesLesPhrases.add("Je voudrais bien acc仕er au panier");
+		toutesLesPhrases.add("Je souhaite acc仕er au panier");
+		
 		toutesLesPhrases.add("Voir le panier");
+		toutesLesPhrases.add("J'aimerais voir le panier");
+		toutesLesPhrases.add("J'aimerais bien voir le panier");
+		toutesLesPhrases.add("Je veux consulter voir le panier");
+		toutesLesPhrases.add("Je veux bien voir le panier");
+		toutesLesPhrases.add("Je voudrais voir le panier");
+		toutesLesPhrases.add("Je voudrais bien voir le panier");
+		toutesLesPhrases.add("Je souhaite voir le panier");
+		toutesLesPhrases.add("J'aimerais aller voir le panier");
+		toutesLesPhrases.add("J'aimerais bien aller voir le panier");
+		toutesLesPhrases.add("Je veux aller voir le panier");
+		toutesLesPhrases.add("Je veux bien aller voir le panier");
+		toutesLesPhrases.add("Je voudrais aller voir le panier");
+		toutesLesPhrases.add("Je voudrais bien aller voir le panier");
+		toutesLesPhrases.add("Je souhaite aller voir le panier");
+		
+		toutesLesPhrases.add("Aller au panier");
+		toutesLesPhrases.add("J'aimerais aller au panier");
+		toutesLesPhrases.add("J'aimerais bien aller au panier");
+		toutesLesPhrases.add("Je veux aller au panier");
+		toutesLesPhrases.add("Je veux bien aller au panier");
+		toutesLesPhrases.add("Je voudrais aller au panier");
+		toutesLesPhrases.add("Je voudrais bien aller au panier");
+		toutesLesPhrases.add("Je souhaite aller au panier");
+		
 		toutesLesPhrases.add("Consulter le panier");
-		toutesLesPhrases.add("Payer");
-		toutesLesPhrases.add("Payer le panier");
-		toutesLesPhrases.add("R使ler ma commande");
-		toutesLesPhrases.add("paiement");
+		toutesLesPhrases.add("J'aimerais consulter le panier");
+		toutesLesPhrases.add("J'aimerais bien consulter le panier");
+		toutesLesPhrases.add("Je veux consulter le panier");
+		toutesLesPhrases.add("Je veux bien consulter le panier");
+		toutesLesPhrases.add("Je voudrais consulter le panier");
+		toutesLesPhrases.add("Je voudrais bien consulter le panier");
+		toutesLesPhrases.add("Je souhaite consulter le panier");
+		
+		toutesLesPhrases.add("retirer du panier");
+		toutesLesPhrases.add("J'aimerais retirer du panier");
+		toutesLesPhrases.add("J'aimerais bien retirer du panier");
+		toutesLesPhrases.add("Je veux consulter retirer du panier");
+		toutesLesPhrases.add("Je veux bien retirer du panier");
+		toutesLesPhrases.add("Je voudrais retirer du panier");
+		toutesLesPhrases.add("Je voudrais bien retirer du panier");
+		toutesLesPhrases.add("Je souhaite retirer du panier");
+		
+		toutesLesPhrases.add("enlever du panier");
+		toutesLesPhrases.add("J'aimerais enlever du panier");
+		toutesLesPhrases.add("J'aimerais bien enlever du panier");
+		toutesLesPhrases.add("Je veux consulter enlever du panier");
+		toutesLesPhrases.add("Je veux bien enlever du panier");
+		toutesLesPhrases.add("Je voudrais enlever du panier");
+		toutesLesPhrases.add("Je voudrais bien enlever du panier");
+		toutesLesPhrases.add("Je souhaite enlever du panier");
+		
+		// toutesLesPhrases.add("Payer"); 			L'interface graphique ne prend pas en compte le paiement
+		// toutesLesPhrases.add("Payer le panier");
+		// toutesLesPhrases.add("R使ler ma commande");
+		// toutesLesPhrases.add("paiement");
 		
 		
 		//commande pour visualiser un v腎ement
@@ -150,6 +321,11 @@ public class Methodes1PPVCosinus
 			else if (caractere.equals("'"))
 			{
 				currentWord+=caractere;
+				liste.add(currentWord);
+				currentWord="";
+			}
+			else if (caractere.equals("-"))
+			{
 				liste.add(currentWord);
 				currentWord="";
 			}
