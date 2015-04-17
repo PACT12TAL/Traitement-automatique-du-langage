@@ -37,6 +37,7 @@ public class Methodes1PPVCosinus
 					listeFinale.add(motDeVoc);
 			}
 		}
+
 		B = new String[listeFinale.size()];
 		for (int i=0 ; i < listeFinale.size() ; i++) 
 			B[i] = listeFinale.get(i);
@@ -69,6 +70,8 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais commencer");
 		toutesLesPhrases.add("Je voudrais bien commencer");
 		toutesLesPhrases.add("Je souhaite commencer");
+		toutesLesPhrases.add("Est ce que je peux commencer");
+		toutesLesPhrases.add("fais moi commencer");
 		
 		toutesLesPhrases.add("a propos");
 		toutesLesPhrases.add("voir a propos");
@@ -89,6 +92,9 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais quitter");
 		toutesLesPhrases.add("Je voudrais bien quitter");
 		toutesLesPhrases.add("Je souhaite quitter");
+		toutesLesPhrases.add("Est ce que je peux quitter");
+		toutesLesPhrases.add("fais moi quitter");
+		
 		toutesLesPhrases.add("arrter");
 		toutesLesPhrases.add("J'aimerais arrter");
 		toutesLesPhrases.add("J'aimerais bien arrter");
@@ -97,6 +103,8 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais arrter");
 		toutesLesPhrases.add("Je voudrais bien arrter");
 		toutesLesPhrases.add("Je souhaite arrter");
+		toutesLesPhrases.add("Est ce que je peux arrter");
+		toutesLesPhrases.add("fais moi arrter");
 		
 		toutesLesPhrases.add("zŽro");
 		toutesLesPhrases.add("un");
@@ -105,11 +113,11 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("quatre");
 		toutesLesPhrases.add("cinq");
 		toutesLesPhrases.add("six");
-		toutesLesPhrases.add("sept");
+		toutesLesPhrases.add("sept");   //50
 		toutesLesPhrases.add("huit");
 		toutesLesPhrases.add("neuf");
 		
-		toutesLesPhrases.add("nouveau compte");
+		toutesLesPhrases.add("nouveau compte");   
 		toutesLesPhrases.add("crŽer un nouveau compte");
 		toutesLesPhrases.add("J'aimerais crŽer un nouveau compte");
 		toutesLesPhrases.add("J'aimerais bien crŽer un nouveau compte");
@@ -140,7 +148,7 @@ public class Methodes1PPVCosinus
 		
 		
 		toutesLesPhrases.add("a");
-		toutesLesPhrases.add("z");
+		toutesLesPhrases.add("z");		//80
 		toutesLesPhrases.add("e");
 		toutesLesPhrases.add("r");
 		toutesLesPhrases.add("t");
@@ -164,9 +172,10 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("c");
 		toutesLesPhrases.add("v");
 		toutesLesPhrases.add("b");
-		toutesLesPhrases.add("n");
-		toutesLesPhrases.add("espace");
+		toutesLesPhrases.add("n");  
+		toutesLesPhrases.add("espace");		// 105
 		toutesLesPhrases.add("effacer");
+		toutesLesPhrases.add("efface");
 		toutesLesPhrases.add("J'aimerais effacer");
 		toutesLesPhrases.add("J'aimerais bien effacer");
 		toutesLesPhrases.add("Je veux effacer");
@@ -186,9 +195,9 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais revenir ˆ la page prŽcŽdente");
 		toutesLesPhrases.add("Je voudrais bien revenir ˆ la page prŽcŽdente");
 		toutesLesPhrases.add("Je souhaite revenir ˆ la page prŽcŽdente");
+		toutesLesPhrases.add("Est ce que je peux revenir ˆ la page prŽcŽdente");
 		
-		
-		
+				
 		toutesLesPhrases.add("prŽcŽdent");
 		toutesLesPhrases.add("vtement prŽcŽdent");
 		toutesLesPhrases.add("voir le vtement prŽcŽdent");
@@ -199,6 +208,8 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais voir le vtement prŽcŽdent");
 		toutesLesPhrases.add("Je voudrais bien voir le vtement prŽcŽdent");
 		toutesLesPhrases.add("Je souhaite voir le vtement prŽcŽdent");
+		toutesLesPhrases.add("Est ce que je peux voir le vtement prŽcŽdent");
+		toutesLesPhrases.add("fais moi voir le vtement prŽcŽdent");
 		
 		toutesLesPhrases.add("suivant");
 		toutesLesPhrases.add("vtement suivant");
@@ -210,6 +221,8 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais voir le vtement suivant");
 		toutesLesPhrases.add("Je voudrais bien voir le vtement suivant");
 		toutesLesPhrases.add("Je souhaite voir le vtement suivant");
+		toutesLesPhrases.add("Est ce que je peux voir le vtement suivant");
+		toutesLesPhrases.add("fais moi voir le vtement suivant");		//150
 		
 		toutesLesPhrases.add("ok");
 		toutesLesPhrases.add("valider");
@@ -223,7 +236,7 @@ public class Methodes1PPVCosinus
 	
 				/** phrase d'accs au catalogue  */
 		
-		toutesLesPhrases.add("AccŽder au catalogue");
+		toutesLesPhrases.add("AccŽder au catalogue");		// 158
 		toutesLesPhrases.add("Retourner au catalogue");
 		toutesLesPhrases.add("Voir le catalogue");
 		toutesLesPhrases.add("consulter le catalogue");
@@ -264,6 +277,12 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je veux bien voir le catalogue");
 		toutesLesPhrases.add("Je veux bien aller voir le catalogue");
 		toutesLesPhrases.add("Je veux bien consulter le catalogue");
+		toutesLesPhrases.add("Est ce que je peux voir le catalogue");
+		toutesLesPhrases.add("fais moi voir le catalogue"); 		// 200
+		toutesLesPhrases.add("Est ce que je peux consulter le catalogue");
+		toutesLesPhrases.add("fais moi consulter le catalogue");
+		toutesLesPhrases.add("Est ce que je peux accŽder au catalogue");
+		toutesLesPhrases.add("fais moi accŽder au catalogue");
 		
 		toutesLesPhrases.add("quitter le catalogue");
 		toutesLesPhrases.add("J'aimerais quitter le catalogue");
@@ -277,7 +296,7 @@ public class Methodes1PPVCosinus
 		
 				/**commande avec le panier  */
 				 
-		toutesLesPhrases.add("Ajouter au panier");
+		toutesLesPhrases.add("Ajouter au panier"); 		// 213
 		toutesLesPhrases.add("J'aimerais ajouter au panier");
 		toutesLesPhrases.add("J'aimerais bien ajouter au panier");
 		toutesLesPhrases.add("Je veux ajouter au panier");
@@ -304,7 +323,7 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais bien mettre dans le panier");
 		toutesLesPhrases.add("Je souhaite mettre dans le panier");
 		
-		toutesLesPhrases.add("AccŽder au panier");
+		toutesLesPhrases.add("AccŽder au panier");		// 237
 		toutesLesPhrases.add("J'aimerais accŽder au panier");
 		toutesLesPhrases.add("J'aimerais bien accŽder au panier");
 		toutesLesPhrases.add("Je veux accŽder au panier");
@@ -318,7 +337,7 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("J'aimerais bien voir le panier");
 		toutesLesPhrases.add("Je veux voir le panier");
 		toutesLesPhrases.add("Je veux bien voir le panier");
-		toutesLesPhrases.add("Je voudrais voir le panier");
+		toutesLesPhrases.add("Je voudrais voir le panier"); 		//250
 		toutesLesPhrases.add("Je voudrais bien voir le panier");
 		toutesLesPhrases.add("Je souhaite voir le panier");
 		toutesLesPhrases.add("J'aimerais aller voir le panier");
@@ -328,6 +347,7 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais aller voir le panier");
 		toutesLesPhrases.add("Je voudrais bien aller voir le panier");
 		toutesLesPhrases.add("Je souhaite aller voir le panier");
+		toutesLesPhrases.add("Est ce que je peux voir le panier");
 		
 		toutesLesPhrases.add("Aller au panier");
 		toutesLesPhrases.add("J'aimerais aller au panier");
@@ -346,6 +366,7 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais consulter le panier");
 		toutesLesPhrases.add("Je voudrais bien consulter le panier");
 		toutesLesPhrases.add("Je souhaite consulter le panier");
+		toutesLesPhrases.add("Est ce que je peux consulter le panier");
 		
 		toutesLesPhrases.add("retirer du panier");
 		toutesLesPhrases.add("J'aimerais retirer du panier");
@@ -371,7 +392,7 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je veux supprimer du panier");
 		toutesLesPhrases.add("Je veux bien supprimer du panier");
 		toutesLesPhrases.add("Je voudrais supprimer du panier");
-		toutesLesPhrases.add("Je voudrais bien supprimer du panier");
+		toutesLesPhrases.add("Je voudrais bien supprimer du panier");		//300
 		toutesLesPhrases.add("Je souhaite supprimer du panier");
 		
 		// toutesLesPhrases.add("Payer"); 			L'interface graphique ne prend pas en compte le paiement
@@ -398,6 +419,8 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais essayer un pull");
 		toutesLesPhrases.add("Je voudrais bien essayer un pull");
 		toutesLesPhrases.add("Je souhaite essayer un pull");
+		toutesLesPhrases.add("Est ce que je peux essayer ce pull");
+		toutesLesPhrases.add("fais moi essayer ce pull");
 		
 		toutesLesPhrases.add("robe");
 		toutesLesPhrases.add("J'aimerais essayer une robe");
@@ -415,6 +438,8 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais une robe");
 		toutesLesPhrases.add("Je voudrais bien une robe");
 		toutesLesPhrases.add("Je souhaite une robe");
+		toutesLesPhrases.add("Est ce que je peux essayer cette robe");
+		toutesLesPhrases.add("fais moi essayer cette robe");
 		
 		toutesLesPhrases.add("tee shirt");
 		toutesLesPhrases.add("J'aimerais un tee shirt");
@@ -428,10 +453,12 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("J'aimerais essayer un tee shirt");
 		toutesLesPhrases.add("J'aimerais bien essayer un tee shirt");
 		toutesLesPhrases.add("Je veux essayer un tee shirt");
-		toutesLesPhrases.add("Je veux bien essayer un tee shirt");
+		toutesLesPhrases.add("Je veux bien essayer un tee shirt");		//350
 		toutesLesPhrases.add("Je voudrais essayer un tee shirt");
 		toutesLesPhrases.add("Je voudrais bien essayer un tee shirt");
 		toutesLesPhrases.add("Je souhaite essayer un tee shirtl");
+		toutesLesPhrases.add("Est ce que je peux essayer ce tee shirt");
+		toutesLesPhrases.add("fais moi essayer ce tee shirt");
 		
 		toutesLesPhrases.add("pantalon ");
 		toutesLesPhrases.add("J'aimerais un pantalon");
@@ -441,7 +468,7 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais un pantalon");
 		toutesLesPhrases.add("Je voudrais bien un pantalon");
 		toutesLesPhrases.add("Je souhaite un pantalon");
-		toutesLesPhrases.add("essayer un pantalon ");
+		toutesLesPhrases.add("essayer un pantalon");
 		toutesLesPhrases.add("J'aimerais essayer un pantalon");
 		toutesLesPhrases.add("J'aimerais bien essayer un pantalon");
 		toutesLesPhrases.add("Je veux essayer un pantalon");
@@ -449,11 +476,14 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais essayer un pantalon");
 		toutesLesPhrases.add("Je voudrais bien essayer un pantalon");
 		toutesLesPhrases.add("Je souhaite essayer un pantalon");
+		toutesLesPhrases.add("Est ce que je peux essayer ce pantalon");
+		toutesLesPhrases.add("fais moi essayer ce pantalon");
 		
 		
 		// toutesLesPhrases.add("Changer la couleur"); 		pas de vetement avec differentes couleurs dans la base de donnŽes 
 		//toutesLesPhrases.add("Changer la taille");		pas de prise en compte de la taille du vetement, il s'adapte automatiquement
 		// toutesLesPhrases.add("Ce modle est-il disponible dans dÕautres coloris?");
+		
 		toutesLesPhrases.add("essayer");
 		toutesLesPhrases.add("J'aimerais essayer");
 		toutesLesPhrases.add("J'aimerais bien essayer");
@@ -462,6 +492,8 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais essayer");
 		toutesLesPhrases.add("Je voudrais bien essayer");
 		toutesLesPhrases.add("Je souhaite essayer");
+		toutesLesPhrases.add("Est ce que je peux essayer");
+		toutesLesPhrases.add("fais moi essayer");
 		
 		toutesLesPhrases.add("essayer le vtement");
 		toutesLesPhrases.add("J'aimerais essayer le vtement");
@@ -471,6 +503,8 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais essayer le vtement");
 		toutesLesPhrases.add("Je voudrais bien essayer le vtement");
 		toutesLesPhrases.add("Je souhaite essayer le vtement");
+		toutesLesPhrases.add("Est ce que je peux essayer le vtement");
+		toutesLesPhrases.add("fais moi essayer le vtement");
 		
 		toutesLesPhrases.add("Changer de vtement");
 		toutesLesPhrases.add("J'aimerais changer de vtement");
@@ -478,7 +512,7 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je veux changer de vtement");
 		toutesLesPhrases.add("Je veux bien changer de vtement");
 		toutesLesPhrases.add("Je voudrais changer de vtement");
-		toutesLesPhrases.add("Je voudrais bien changer de vtement");
+		toutesLesPhrases.add("Je voudrais bien changer de vtement"); 		// 400
 		toutesLesPhrases.add("Je souhaite changer de vtement");
 		
 		toutesLesPhrases.add("Changer de pull");
@@ -517,6 +551,54 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Je voudrais bien changer de tee shirt");
 		toutesLesPhrases.add("Je souhaite changer de tee shirt");
 		
+		toutesLesPhrases.add("retirer le vtement");
+		toutesLesPhrases.add("J'aimerais retirer le vtement");
+		toutesLesPhrases.add("J'aimerais bien retirer le vtement");
+		toutesLesPhrases.add("Je veux retirer le vtement");
+		toutesLesPhrases.add("Je veux bien retirer le vtement");
+		toutesLesPhrases.add("Je voudrais retirer le vtement");
+		toutesLesPhrases.add("Je voudrais bien retirer le vtement");
+		toutesLesPhrases.add("Je souhaite retirer le vtement");
+		toutesLesPhrases.add("retire moi le vtement");
+
+		toutesLesPhrases.add("Retirer le pull");
+		toutesLesPhrases.add("J'aimerais retirer ce pull");
+		toutesLesPhrases.add("J'aimerais bien retirer ce pull");
+		toutesLesPhrases.add("Je veux retirer ce pull");
+		toutesLesPhrases.add("Je veux bien retirer ce pull");
+		toutesLesPhrases.add("Je voudrais retirer ce pull");
+		toutesLesPhrases.add("Je voudrais bien retirer ce pull");
+		toutesLesPhrases.add("Je souhaite retirer ce pull");  		// 450
+		
+		toutesLesPhrases.add("retirer ce pantalon");
+		toutesLesPhrases.add("J'aimerais retirer ce pantalon");
+		toutesLesPhrases.add("J'aimerais bien retirer ce pantalon");
+		toutesLesPhrases.add("Je veux retirer ce pantalon");
+		toutesLesPhrases.add("Je veux bien retirer ce pantalon");
+		toutesLesPhrases.add("Je voudrais retirer ce pantalon");
+		toutesLesPhrases.add("Je voudrais bien retirer ce pantalon");
+		toutesLesPhrases.add("Je souhaite retirer ce pantalon");
+		
+		toutesLesPhrases.add("retirer ce robe");
+		toutesLesPhrases.add("J'aimerais retirer ce robe");
+		toutesLesPhrases.add("J'aimerais bien retirer ce robe");
+		toutesLesPhrases.add("Je veux retirer ce robe");
+		toutesLesPhrases.add("Je veux bien retirer ce robe");
+		toutesLesPhrases.add("Je voudrais retirer ce robe");
+		toutesLesPhrases.add("Je voudrais bien retirer ce robe");
+		toutesLesPhrases.add("Je souhaite retirer ce robe");
+		
+		toutesLesPhrases.add("retirer ce tee shirt");
+		toutesLesPhrases.add("J'aimerais retirer ce tee shirt");
+		toutesLesPhrases.add("J'aimerais bien retirer ce tee shirt");
+		toutesLesPhrases.add("Je veux retirer ce tee shirt");
+		toutesLesPhrases.add("Je veux bien retirer ce tee shirt");
+		toutesLesPhrases.add("Je voudrais retirer ce tee shirt");
+		toutesLesPhrases.add("Je voudrais bien retirer ce tee shirt");
+		toutesLesPhrases.add("Je souhaite retirer ce tee shirt");
+		
+		
+		
 		
 		
 		// toutesLesPhrases.add("Demander un vtement");       la commande n'est plus utile car on oriente le projet pour des particuliers
@@ -526,10 +608,10 @@ public class Methodes1PPVCosinus
 		
 		M = toutesLesPhrases.size();
 			// M est le nombre de commandes vocales que l'on a dans la base de donnees
-		System.out.println(M);
+		
 		
 		remplirTableauB() ;
-		tableauDeTableaux = new int[N][M];
+		tableauDeTableaux = new int[M][N];
 		remplirTableauDeTableaux() ;
 		
 	}
@@ -539,7 +621,7 @@ public class Methodes1PPVCosinus
 	
 	public static void remplirTableauDeTableaux()
 	{
-		for (int j=0;j<toutesLesPhrases.size();j++)
+		for (int j=0;j<M;j++)
 			{
 				int[] T = TableauAnalyse(creerCommande(toutesLesPhrases.get(j)));
 				tableauDeTableaux[j]=T;
@@ -752,240 +834,1381 @@ public class Methodes1PPVCosinus
 			return (0) ;	
 		
 		case 13 :
-			return (0) ;	
+			return (1) ;	
 		
 		case 14 :
-			return (0) ;	
+			return (1) ;	
 		
 		case 15 :
-			return (0) ;	
+			return (1) ;	
 		
 		case 16 :
-			return (0) ;	
+			return (1) ;	
 		
 		case 17 :
-			return (0) ;	
+			return (1) ;	
 		
 		case 18 :
-			return (0) ;	
+			return (1) ;	
 		
 		case 19 :
-			return (0) ;	
+			return (1) ;	
 		
 		case 20 :
-			return (0) ;	
+			return (1) ;	
 		
 		case 21 :
-			return (0) ;	
+			return (1) ;	
 		
 		case 22 :
-			return (0) ;	
+			return (1) ;	
 		
 		case 23 :
-			return (0) ;	
+			return (2) ;	
 		
 		case 24 :
-			return (0) ;	
+			return (2) ;	
 		
 		case 25 :
-			return (0) ;	
+			return (2) ;	
 		
 		case 26 :
-			return (0) ;	
+			return (2) ;	
 		
 		case 27 :
-			return (0) ;
+			return (2) ;
 		
 		case 28 :
-			return (0) ;
+			return (2) ;
 		
 		case 29 :
-			return (0) ;
+			return (2) ;
 			
 		case 30 :
-			return (0) ;
+			return (2) ;
 			
 		case 31 :
-			return (0) ;
+			return (2) ;
 			
 		case 32 :
-			return (0) ;
+			return (2) ;
 			
 		case 33 :
-			return (0) ;
+			return (2) ;
 			
 		case 34 :
-			return (0) ;
+			return (2) ;
 			
 		case 35 :
-			return (0) ;
+			return (2) ;
 			
 		case 36 :
-			return (0) ;
+			return (2) ;
 			
 		case 37 :
-			return (0) ;
+			return (2) ;
 			
 		case 38 :
-			return (0) ;	
+			return (2) ;	
 		
 		case 39 :
-			return (0) ;
+			return (2) ;
 			
 		case 40 :
-			return (0) ;
+			return (2) ;
 			
 		case 41 :
-			return (0) ;
+			return (2) ;
 			
 		case 42 :
-			return (0) ;
-			
-		case 43 :
-			return (0) ;
+			return (2) ;
 			
 		case 44 :
-			return (0) ;
+			return (3) ;
 			
 		case 45 :
-			return (0) ;
+			return (4) ;
 			
 		case 46 :
-			return (0) ;
+			return (5) ;
 			
 		case 47 :
-			return (0) ;
+			return (6) ;
 			
 		case 48 :
-			return (0) ;	
+			return (7) ;	
 		
 		case 49 :
-			return (0) ;
-			
-		case 50 :
-			return (0) ;
-			
-		case 51 :
-			return (0) ;
-			
-		case 52 :
-			return (0) ;
+			return (8) ;
 			
 		case 53 :
-			return (0) ;
+			return (9) ;
 			
 		case 54 :
-			return (0) ;
+			return (9) ;
 			
 		case 55 :
-			return (0) ;
+			return (9) ;
 			
 		case 56 :
-			return (0) ;
+			return (9) ;
 			
 		case 57 :
-			return (0) ;
+			return (9) ;
 			
 		case 58 :
-			return (0) ;	
+			return (9) ;	
 		
 		case 59 :
-			return (0) ;	
+			return (9) ;
+			
 		case 60 :
-			return (0) ;
+			return (9) ;
 			
 		case 61 :
-			return (0) ;
+			return (9) ;
 			
 		case 62 :
-			return (0) ;
+			return (9) ;
 			
 		case 63 :
-			return (0) ;
+			return (9) ;
 			
 		case 64 :
-			return (0) ;
+			return (9) ;
 			
 		case 65 :
-			return (0) ;
+			return (9) ;
 			
 		case 66 :
-			return (0) ;
+			return (9) ;
 			
 		case 67 :
-			return (0) ;
+			return (9) ;
 			
 		case 68 :
-			return (0) ;	
+			return (9) ;	
 		
 		case 69 :
-			return (0) ;	
+			return (9) ;	
 			
 		case 70 :
-			return (0) ;
+			return (16) ;
 			
 		case 71 :
-			return (0) ;
+			return (16) ;
 			
 		case 72 :
-			return (0) ;
+			return (16) ;
 			
 		case 73 :
-			return (0) ;
+			return (16) ;
 			
 		case 74 :
-			return (0) ;
+			return (16) ;
 			
 		case 75 :
-			return (0) ;
+			return (16) ;
 			
 		case 76 :
-			return (0) ;
+			return (16) ;
 			
 		case 77 :
-			return (0) ;
+			return (16) ;
 			
 		case 78 :
-			return (0) ;	
+			return (16) ;	
 		
 		case 79 :
-			return (0) ;	
+			return (25) ;	
 			
 		case 80 :
-			return (0) ;
+			return (26) ;
 			
 		case 81 :
-			return (0) ;
+			return (27) ;
 			
 		case 82 :
-			return (0) ;
+			return (28) ;
 			
 		case 83 :
-			return (0) ;
+			return (29) ;
 			
 		case 84 :
-			return (0) ;
+			return (30) ;
 			
 		case 85 :
-			return (0) ;
+			return (31) ;
 			
 		case 86 :
-			return (0) ;
+			return (32) ;
 			
 		case 87 :
-			return (0) ;
+			return (33) ;
 			
 		case 88 :
-			return (0) ;	
+			return (34) ;	
 		
 		case 89 :
-			return (0) ;	
+			return (35) ;	
 		
+		case 90 :
+			return (36) ;
 			
+		case 91 :
+			return (37) ;
+			
+		case 92 :
+			return (38) ;
+			
+		case 93 :
+			return (39) ;
+			
+		case 94 :
+			return (40) ;
+			
+		case 95 :
+			return (41) ;
+			
+		case 96 :
+			return (42) ;
+			
+		case 97 :
+			return (43) ;
+			
+		case 98 :
+			return (44) ;	
 		
+		case 99 :
+			return (45) ;
+			
+		case 100 :
+			return (46) ;
+			
+		case 101 :
+			return (47) ;
+			
+		case 102 :
+			return (48) ;
+			
+		case 103 :
+			return (49) ;
+			
+		case 104 :
+			return (50) ;
+			
+		case 105 :
+			return (51) ;
+			
+		case 106 :
+			return (52) ;
+			
+		case 107 :
+			return (52) ;
+			
+		case 108 :
+			return (52) ;	
 		
+		case 109 :
+			return (52) ;	
 		
+		case 110 :
+			return (52) ;	
 		
+		case 111 :
+			return (52) ;	
+		
+		case 112 :
+			return (52) ;	
+		
+		case 113 :
+			return (52) ;	
+		
+		case 114 :
+			return (52) ;	
+		
+		case 115 :
+			return (10) ;	
+		
+		case 116 :
+			return (10) ;	
+		
+		case 117 :
+			return (10) ;	
+		
+		case 118 :
+			return (10) ;	
+		
+		case 119 :
+			return (10) ;	
+		
+		case 120 :
+			return (10) ;	
+		
+		case 121 :
+			return (10) ;	
+		
+		case 122 :
+			return (10) ;	
+		
+		case 123 :
+			return (10) ;	
+		
+		case 124 :
+			return (10) ;	
+		
+		case 125 :
+			return (10) ;	
+		
+		case 126 :
+			return (10) ;	
+		
+		case 127 :
+			return (18) ;
+		
+		case 128 :
+			return (18) ;
+		
+		case 129 :
+			return (18) ;
+			
+		case 130 :
+			return (18) ;
+			
+		case 131 :
+			return (18) ;
+			
+		case 132 :
+			return (18) ;
+			
+		case 133 :
+			return (18) ;
+			
+		case 134 :
+			return (18) ;
+			
+		case 135 :
+			return (18) ;
+			
+		case 136 :
+			return (18) ;
+			
+		case 137 :
+			return (18) ;
+			
+		case 138 :
+			return (18) ;	
+		
+		case 139 :
+			return (17) ;
+			
+		case 140 :
+			return (17) ;
+			
+		case 141 :
+			return (17) ;
+			
+		case 142 :
+			return (17) ;
+			
+		case 143 :
+			return (17) ;
+			
+		case 144 :
+			return (17) ;
+			
+		case 145 :
+			return (17) ;
+			
+		case 146 :
+			return (17) ;
+			
+		case 147 :
+			return (17) ;
+			
+		case 148 :
+			return (17) ;	
+		
+		case 149 :
+			return (17) ;
+			
+		case 150 :
+			return (17) ;
+			
+		case 151 :
+			return (22) ;
+			
+		case 152 :
+			return (22) ;
+			
+		case 153 :
+			return (23) ;
+			
+		case 154 :
+			return (23) ;
+			
+		case 155 :
+			return (23) ;
+			
+		case 156 :
+			return (24) ;
+			
+		case 157 :
+			return (24) ;
+			
+		case 158 :
+			return (53) ;	
+		
+		case 159 :
+			return (53) ;
+			
+		case 160 :
+			return (53) ;
+			
+		case 161 :
+			return (53) ;
+			
+		case 162 :
+			return (53) ;
+			
+		case 163 :
+			return (53) ;
+			
+		case 164 :
+			return (53) ;
+			
+		case 165 :
+			return (53) ;
+			
+		case 166 :
+			return (53) ;
+			
+		case 167 :
+			return (53) ;
+			
+		case 168 :
+			return (53) ;	
+		
+		case 169 :
+			return (53) ;	
+			
+		case 170 :
+			return (53) ;
+			
+		case 171 :
+			return (53) ;
+			
+		case 172 :
+			return (53) ;
+			
+		case 173 :
+			return (53) ;
+			
+		case 174 :
+			return (53) ;
+			
+		case 175 :
+			return (53) ;
+			
+		case 176 :
+			return (53) ;
+			
+		case 177 :
+			return (53) ;
+			
+		case 178 :
+			return (53) ;	
+		
+		case 179 :
+			return (53) ;	
+			
+		case 180 :
+			return (53) ;
+			
+		case 181 :
+			return (53) ;
+			
+		case 182 :
+			return (53) ;
+			
+		case 183 :
+			return (53) ;
+			
+		case 184 :
+			return (53) ;
+			
+		case 185 :
+			return (53) ;
+			
+		case 186 :
+			return (53) ;
+			
+		case 187 :
+			return (53) ;
+			
+		case 188 :
+			return (53) ;	
+		
+		case 189 :
+			return (53) ;	
+		
+		case 190 :
+			return (53) ;
+			
+		case 191 :
+			return (53) ;
+			
+		case 192 :
+			return (53) ;
+			
+		case 193 :
+			return (53) ;
+			
+		case 194 :
+			return (53) ;
+			
+		case 195 :
+			return (53) ;
+			
+		case 196 :
+			return (53) ;
+			
+		case 197 :
+			return (53) ;
+			
+		case 198 :
+			return (53) ;	
+		
+		case 199 :
+			return (53) ;
+			
+		case 200 :
+			return (53) ;
+			
+		case 201 :
+			return (53) ;
+			
+		case 202 :
+			return (53) ;
+			
+		case 203 :
+			return (53) ;
+			
+		case 204 :
+			return (53) ;
+			
+		case 205 :
+			return (10) ;
+			
+		case 206 :
+			return (10) ;
+			
+		case 207 :
+			return (10) ;
+			
+		case 208 :
+			return (10) ;	
+		
+		case 209 :
+			return (10) ;	
+		
+		case 210 :
+			return (10) ;	
+		
+		case 211 :
+			return (10) ;	
+		
+		case 212 :
+			return (10) ;	
+		
+		case 213 :
+			return (19) ;	
+		
+		case 214 :
+			return (19) ;	
+		
+		case 215 :
+			return (19) ;	
+		
+		case 216 :
+			return (19) ;	
+		
+		case 217 :
+			return (19) ;	
+		
+		case 218 :
+			return (19) ;	
+		
+		case 219 :
+			return (19) ;	
+		
+		case 220 :
+			return (19) ;	
+		
+		case 221 :
+			return (19) ;	
+		
+		case 222 :
+			return (19) ;	
+		
+		case 223 :
+			return (19) ;	
+		
+		case 224 :
+			return (19) ;	
+		
+		case 225 :
+			return (19) ;	
+		
+		case 226 :
+			return (19) ;	
+		
+		case 227 :
+			return (19) ;
+		
+		case 228 :
+			return (19) ;
+		
+		case 229 :
+			return (19) ;
+			
+		case 230 :
+			return (19) ;
+			
+		case 231 :
+			return (19) ;
+			
+		case 232 :
+			return (19) ;
+			
+		case 233 :
+			return (19) ;
+			
+		case 234 :
+			return (19) ;
+			
+		case 235 :
+			return (19) ;
+			
+		case 236 :
+			return (19) ;
+			
+		case 237 :
+			return (15) ;
+			
+		case 238 :
+			return (15) ;	
+		
+		case 239 :
+			return (15) ;
+			
+		case 240 :
+			return (15) ;
+			
+		case 241 :
+			return (15) ;
+			
+		case 242 :
+			return (15) ;
+			
+		case 243 :
+			return (15) ;
+			
+		case 244 :
+			return (15) ;
+			
+		case 245 :
+			return (15) ;
+			
+		case 246 :
+			return (15) ;
+			
+		case 247 :
+			return (15) ;
+			
+		case 248 :
+			return (15) ;	
+		
+		case 249 :
+			return (15) ;
+			
+		case 250 :
+			return (15) ;
+			
+		case 251 :
+			return (15) ;
+			
+		case 252 :
+			return (15) ;
+			
+		case 253 :
+			return (15) ;
+			
+		case 254 :
+			return (15) ;
+			
+		case 255 :
+			return (15) ;
+			
+		case 256 :
+			return (15) ;
+			
+		case 257 :
+			return (15) ;
+			
+		case 258 :
+			return (15) ;	
+		
+		case 259 :
+			return (15) ;
+			
+		case 260 :
+			return (15) ;
+			
+		case 261 :
+			return (15) ;
+			
+		case 262 :
+			return (15) ;
+			
+		case 263 :
+			return (15) ;
+			
+		case 264 :
+			return (15) ;
+			
+		case 265 :
+			return (15) ;
+			
+		case 266 :
+			return (15) ;
+			
+		case 267 :
+			return (15) ;
+			
+		case 268 :
+			return (15) ;	
+		
+		case 269 :
+			return (15) ;	
+			
+		case 270 :
+			return (15) ;
+			
+		case 271 :
+			return (15) ;
+			
+		case 272 :
+			return (15) ;
+			
+		case 273 :
+			return (15) ;
+			
+		case 274 :
+			return (15) ;
+			
+		case 275 :
+			return (15) ;
+			
+		case 276 :
+			return (15) ;
+			
+		case 277 :
+			return (15) ;
+			
+		case 278 :
+			return (21) ;	
+		
+		case 279 :
+			return (21) ;	
+			
+		case 280 :
+			return (21) ;
+			
+		case 281 :
+			return (21) ;
+			
+		case 282 :
+			return (21) ;
+			
+		case 283 :
+			return (21) ;
+			
+		case 284 :
+			return (21) ;
+			
+		case 285 :
+			return (21) ;
+			
+		case 286 :
+			return (21) ;
+			
+		case 287 :
+			return (21) ;
+			
+		case 288 :
+			return (21) ;	
+		
+		case 289 :
+			return (21) ;	
+		
+		case 290 :
+			return (21) ;
+			
+		case 291 :
+			return (21) ;
+			
+		case 292 :
+			return (21) ;
+			
+		case 293 :
+			return (21) ;
+			
+		case 294 :
+			return (21) ;
+			
+		case 295 :
+			return (21) ;
+			
+		case 296 :
+			return (21) ;
+			
+		case 297 :
+			return (21) ;
+			
+		case 298 :
+			return (21) ;	
+		
+		case 299 :
+			return (21) ;
+			
+		case 301 :
+			return (21) ;
+			
+		case 302 :
+			return (13) ;
+			
+		case 303 :
+			return (13) ;
+			
+		case 304 :
+			return (13) ;
+			
+		case 305 :
+			return (13) ;
+			
+		case 306 :
+			return (13) ;
+			
+		case 307 :
+			return (13) ;
+			
+		case 308 :
+			return (13) ;	
+		
+		case 309 :
+			return (13) ;	
+		
+		case 310 :
+			return (13) ;	
+		
+		case 311 :
+			return (13) ;	
+		
+		case 312 :
+			return (13) ;	
+		
+		case 313 :
+			return (13) ;	
+		
+		case 314 :
+			return (13) ;	
+		
+		case 315 :
+			return (13) ;	
+		
+		case 316 :
+			return (13) ;	
+		
+		case 317 :
+			return (13) ;	
+		
+		case 318 :
+			return (13) ;	
+		
+		case 319 :
+			return (13) ;	
+		
+		case 320 :
+			return (12) ;	
+		
+		case 321 :
+			return (12) ;	
+		
+		case 322 :
+			return (12) ;	
+		
+		case 323 :
+			return (12) ;	
+		
+		case 324 :
+			return (12) ;	
+		
+		case 325 :
+			return (12) ;	
+		
+		case 326 :
+			return (12) ;	
+		
+		case 327 :
+			return (12) ;
+		
+		case 328 :
+			return (12) ;
+		
+		case 329 :
+			return (12) ;
+			
+		case 330 :
+			return (12) ;
+			
+		case 331 :
+			return (12) ;
+			
+		case 332 :
+			return (12) ;
+			
+		case 333 :
+			return (12) ;
+			
+		case 334 :
+			return (12) ;
+			
+		case 335 :
+			return (12) ;
+			
+		case 336 :
+			return (12) ;
+			
+		case 337 :
+			return (12) ;
+			
+		case 338 :
+			return (11) ;	
+		
+		case 339 :
+			return (11) ;
+			
+		case 340 :
+			return (11) ;
+			
+		case 341 :
+			return (11) ;
+			
+		case 342 :
+			return (11) ;
+			
+		case 343 :
+			return (11) ;
+			
+		case 344 :
+			return (11) ;
+			
+		case 345 :
+			return (11) ;
+			
+		case 346 :
+			return (11) ;
+			
+		case 347 :
+			return (11) ;
+			
+		case 348 :
+			return (11) ;	
+		
+		case 349 :
+			return (11) ;
+			
+		case 350 :
+			return (11) ;
+			
+		case 351 :
+			return (11) ;
+			
+		case 352 :
+			return (11) ;
+			
+		case 353 :
+			return (11) ;
+			
+		case 354 :
+			return (11) ;
+			
+		case 355 :
+			return (11) ;
+			
+		case 356 :
+			return (14) ;
+			
+		case 357 :
+			return (14) ;
+			
+		case 358 :
+			return (14) ;	
+		
+		case 359 :
+			return (14) ;
+			
+		case 360 :
+			return (14) ;
+			
+		case 361 :
+			return (14) ;
+			
+		case 362 :
+			return (14) ;
+			
+		case 363 :
+			return (14) ;
+			
+		case 364 :
+			return (14) ;
+			
+		case 365 :
+			return (14) ;
+			
+		case 366 :
+			return (14) ;
+			
+		case 367 :
+			return (14) ;
+			
+		case 368 :
+			return (14) ;	
+		
+		case 369 :
+			return (14) ;	
+			
+		case 370 :
+			return (14) ;
+			
+		case 371 :
+			return (14) ;
+			
+		case 372 :
+			return (14) ;
+			
+		case 373 :
+			return (14) ;
+			
+		case 374 :
+			return (20) ;
+			
+		case 375 :
+			return (20) ;
+			
+		case 376 :
+			return (20) ;
+			
+		case 377 :
+			return (20) ;
+			
+		case 378 :
+			return (20) ;	
+		
+		case 379 :
+			return (20) ;	
+			
+		case 380 :
+			return (20) ;
+			
+		case 381 :
+			return (20) ;
+			
+		case 382 :
+			return (20) ;
+			
+		case 383 :
+			return (20) ;
+			
+		case 384 :
+			return (20) ;
+			
+		case 385 :
+			return (20) ;
+			
+		case 386 :
+			return (20) ;
+			
+		case 387 :
+			return (20) ;
+			
+		case 388 :
+			return (20) ;	
+		
+		case 389 :
+			return (20) ;	
+		
+		case 390 :
+			return (20) ;
+			
+		case 391 :
+			return (20) ;
+			
+		case 392 :
+			return (20) ;
+			
+		case 393 :
+			return (20) ;
+			
+		case 394 :
+			return (10) ;
+			
+		case 395 :
+			return (10) ;
+			
+		case 396 :
+			return (10) ;
+			
+		case 397 :
+			return (10) ;
+			
+		case 398 :
+			return (10) ;	
+		
+		case 399 :
+			return (10) ;
+			
+		case 400 :
+			return (10) ;
+			
+		case 401 :
+			return (10) ;
+			
+		case 402 :
+			return (10) ;
+			
+		case 403 :
+			return (10) ;
+			
+		case 404 :
+			return (10) ;
+			
+		case 405 :
+			return (10) ;
+			
+		case 406 :
+			return (10) ;
+			
+		case 407 :
+			return (10) ;
+			
+		case 408 :
+			return (10) ;	
+		
+		case 409 :
+			return (10) ;	
+		
+		case 410 :
+			return (10) ;	
+		
+		case 411 :
+			return (10) ;	
+		
+		case 412 :
+			return (10) ;	
+		
+		case 413 :
+			return (10) ;	
+		
+		case 414 :
+			return (10) ;	
+		
+		case 415 :
+			return (10) ;	
+		
+		case 416 :
+			return (10) ;	
+		
+		case 417 :
+			return (10) ;	
+		
+		case 418 :
+			return (10) ;	
+		
+		case 419 :
+			return (10) ;	
+		
+		case 420 :
+			return (10) ;	
+		
+		case 421 :
+			return (10) ;	
+		
+		case 422 :
+			return (10) ;	
+		
+		case 423 :
+			return (10) ;	
+		
+		case 424 :
+			return (10) ;	
+		
+		case 425 :
+			return (10) ;	
+		
+		case 426 :
+			return (10) ;	
+		
+		case 427 :
+			return (10) ;
+		
+		case 428 :
+			return (10) ;
+		
+		case 429 :
+			return (10) ;
+			
+		case 430 :
+			return (10) ;
+			
+		case 431 :
+			return (10) ;
+			
+		case 432 :
+			return (10) ;
+			
+		case 433 :
+			return (10) ;
+			
+		case 434 :
+			return (10) ;
+			
+		case 435 :
+			return (10) ;
+			
+		case 436 :
+			return (10) ;
+			
+		case 437 :
+			return (10) ;
+			
+		case 438 :
+			return (10) ;	
+		
+		case 439 :
+			return (10) ;
+			
+		case 440 :
+			return (10) ;
+			
+		case 441 :
+			return (10) ;
+			
+		case 442 :
+			return (10) ;
+			
+		case 443 :
+			return (10) ;
+			
+		case 444 :
+			return (10) ;
+			
+		case 445 :
+			return (10) ;
+			
+		case 446 :
+			return (10) ;
+			
+		case 447 :
+			return (10) ;
+			
+		case 448 :
+			return (10) ;	
+		
+		case 449 :
+			return (10) ;
+			
+		case 450 :
+			return (10) ;
+			
+		case 451 :
+			return (10) ;
+			
+		case 452 :
+			return (10) ;
+			
+		case 453 :
+			return (10) ;
+			
+		case 454 :
+			return (10) ;
+			
+		case 455 :
+			return (10) ;
+			
+		case 456 :
+			return (10) ;
+			
+		case 457 :
+			return (10) ;
+			
+		case 458 :
+			return (10) ;	
+		
+		case 459 :
+			return (10) ;
+			
+		case 460 :
+			return (10) ;
+			
+		case 461 :
+			return (10) ;
+			
+		case 462 :
+			return (10) ;
+			
+		case 463 :
+			return (10) ;
+			
+		case 464 :
+			return (10) ;
+			
+		case 465 :
+			return (10) ;
+			
+		case 466 :
+			return (10) ;
+			
+		case 467 :
+			return (10) ;
+			
+		case 468 :
+			return (10) ;	
+		
+		case 469 :
+			return (10) ;	
+			
+		case 470 :
+			return (10) ;
+			
+		case 471 :
+			return (10) ;
+			
+		case 472 :
+			return (10) ;
+			
+		case 473 :
+			return (10) ;
+			
+		case 474 :
+			return (10) ;
+			
+		case 475 :
+			return (10) ;
+			
+			
+			
 		
 		default :
 			return(-1);
