@@ -113,7 +113,7 @@ public class Methodes3PPVCosinus
 		
 		
 		remplirTableauB() ;
-		tableauDeTableaux = new int[N][M];
+		tableauDeTableaux = new int[M][N];
 		remplirTableauDeTableaux() ;
 		
 	}

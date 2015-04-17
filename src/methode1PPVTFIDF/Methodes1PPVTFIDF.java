@@ -113,7 +113,7 @@ public class Methodes1PPVTFIDF
 		remplirTableauB() ;
 		DF = new int [N] ;
 		remplirDF();
-		tableauDeTableaux = new double[N][M];
+		tableauDeTableaux = new double[M][N];
 		remplirTableauDeTableaux() ;
 		
 	}
