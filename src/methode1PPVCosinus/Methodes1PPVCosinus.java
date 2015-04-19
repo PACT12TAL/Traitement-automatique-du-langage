@@ -106,16 +106,16 @@ public class Methodes1PPVCosinus
 		toutesLesPhrases.add("Est ce que je peux arrêter");
 		toutesLesPhrases.add("fais moi arrêter");
 		
-		toutesLesPhrases.add("zéro");
+		toutesLesPhrases.add("0");
 		toutesLesPhrases.add("un");
-		toutesLesPhrases.add("deux");
-		toutesLesPhrases.add("trois");
-		toutesLesPhrases.add("quatre");
-		toutesLesPhrases.add("cinq");
-		toutesLesPhrases.add("six");
-		toutesLesPhrases.add("sept");   //50
-		toutesLesPhrases.add("huit");
-		toutesLesPhrases.add("neuf");
+		toutesLesPhrases.add("2");
+		toutesLesPhrases.add("3");
+		toutesLesPhrases.add("4");
+		toutesLesPhrases.add("5");
+		toutesLesPhrases.add("6");
+		toutesLesPhrases.add("7");   //50
+		toutesLesPhrases.add("8");
+		toutesLesPhrases.add("9");
 		
 		toutesLesPhrases.add("nouveau compte");   
 		toutesLesPhrases.add("créer un nouveau compte");
