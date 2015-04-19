@@ -2,8 +2,6 @@ package methode1PPVTFIDF;
 
 import java.util.ArrayList;
 
-import methode1PPVCosinus.Methodes1PPVCosinus;
-
 
 public class Main1PPVTFIDF {
 
@@ -27,7 +25,7 @@ public class Main1PPVTFIDF {
 		ArrayList<String> commande = Methodes1PPVTFIDF.creerCommande(parole); 
 		/** commande est la arraylist de mots de la phrase a analyser*/
 		
-		T = Methodes1PPVTFIDF.TableauAnalyse(commande);
+		T = Methodes1PPVTFIDF.ConversionTableauTFIDF(Methodes1PPVTFIDF.TableauAnalyse(commande));
 		
 		int indiceCommande = Methodes1PPVTFIDF.tableauLePlusProche(T);
 		
@@ -35,7 +33,7 @@ public class Main1PPVTFIDF {
 		
 		System.out.println(indiceCommande);
 		System.out.println(indiceAction); // indice a recuperer pour l'intégration
-		System.out.println(Methodes1PPVCosinus.toutesLesPhrases.get(indiceCommande));
+		System.out.println(Methodes1PPVTFIDF.toutesLesPhrases.get(indiceCommande));
 	}
 
 }
