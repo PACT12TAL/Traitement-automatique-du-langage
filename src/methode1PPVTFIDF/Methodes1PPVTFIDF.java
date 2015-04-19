@@ -42,7 +42,6 @@ public class Methodes1PPVTFIDF
 			B[i] = listeFinale.get(i);
 		
 		N = B.length ;
-		
 	}
 	
 	
@@ -608,7 +607,6 @@ public class Methodes1PPVTFIDF
 		M = toutesLesPhrases.size();
 			// M est le nombre de commandes vocales que l'on a dans la base de donnees
 		
-		
 		remplirTableauB() ;
 		DF = new int [N] ;
 		remplirDF();
@@ -655,9 +653,7 @@ public class Methodes1PPVTFIDF
 			{
 				double [] U = TableauAnalyse(creerCommande(toutesLesPhrases.get(j)));
 					// la méthode TableauAnalyse code la partie term frequency
-				double[] T = new double [N] ;
-				for ( int i=0 ; i<N ; i++ )
-					T[i] = (U[i]* Math.log(2*N / DF[i])) ;
+				double[] T = ConversionTableauTFIDF(U);
 
 				tableauDeTableaux[j]=T;
 			}
@@ -734,7 +730,7 @@ public class Methodes1PPVTFIDF
 	public static void initT(double[] tableau)
 	{
 		//initialise les cases du tableau T a zero pour éviter les mauvaises surprises
-		for (int i=0 ; i<N ; i++ )
+		for (int i=0 ; i< tableau.length ; i++ )
 			tableau[i] = 0;
 	}
 	
@@ -772,6 +768,24 @@ public class Methodes1PPVTFIDF
 	}
 	
 	
+	public static double[] ConversionTableauTFIDF(double[] tab) 
+	{
+		double[] tabTFIDF = new double[tab.length];
+		
+		
+		for (int i=0 ; i< tab.length ; i++ )
+		{
+			double Ndouble;
+			Ndouble = N ;
+			tabTFIDF[i] =(tab[i]* Math.log(Ndouble / DF[i])) ;			
+		}
+		
+		return tabTFIDF ;
+			
+			
+	}
+	
+	
 	
 	public static double comparateurDeDeuxTableaux (double[] tab1, double[] tab2)
 	{
@@ -806,12 +820,13 @@ public class Methodes1PPVTFIDF
 		psPlusGrand = comparateurDeDeuxTableaux(tabl , tableauDeTableaux[0]);
 		
 		for (i=1 ; i<M ; i++)
+		{	
 			if (psPlusGrand < comparateurDeDeuxTableaux(tabl , tableauDeTableaux[i]) )
 			{
 				psPlusGrand = comparateurDeDeuxTableaux(tabl, tableauDeTableaux[i]); 
 				indicePlusProche = i ;
 			}	
-		
+		}
 		return (indicePlusProche);
 		
 	}

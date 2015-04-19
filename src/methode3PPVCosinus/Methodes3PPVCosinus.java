@@ -852,6 +852,10 @@ public class Methodes3PPVCosinus
 		indiceCommande2 = correspondanceClasseAction(indicePlusProche2) ;
 		indiceCommande3 = correspondanceClasseAction(indicePlusProche3) ;
 		
+		System.out.println("indicePlusProche1 = " + indicePlusProche1 +" " +toutesLesPhrases.get(indicePlusProche1));
+		System.out.println("indicePlusProche2 = " + indicePlusProche2 +" " + toutesLesPhrases.get(indicePlusProche2));
+		System.out.println("indicePlusProche3 = " + indicePlusProche3 +" " + toutesLesPhrases.get(indicePlusProche3));
+		
 		
 		indicePlusProbable = indiceCommande1 ;
 			//commande par défaut

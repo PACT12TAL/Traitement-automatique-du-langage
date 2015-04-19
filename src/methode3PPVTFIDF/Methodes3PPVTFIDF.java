@@ -618,7 +618,7 @@ public class Methodes3PPVTFIDF
 	
 	
 
-	private static int[] DF ;
+	public static int[] DF ;
 	
 	public static void remplirDF()
 	{
@@ -654,13 +654,31 @@ public class Methodes3PPVTFIDF
 			{
 				double [] U = TableauAnalyse(creerCommande(toutesLesPhrases.get(j)));
 					// la méthode TableauAnalyse code la partie term frequency
-				double[] T = new double [N] ;
-				for ( int i=0 ; i<N ; i++ )
-					T[i] = (U[i]* Math.log(2*N / DF[i])) ;
-
+				
+				double[] T = ConversionTableauTFIDF(U);
+				
 				tableauDeTableaux[j]=T;
 			}
 	}
+	
+	
+	public static double[] ConversionTableauTFIDF(double[] tab) 
+	{
+		double[] tabTFIDF = new double[tab.length];
+		
+		
+		for (int i=0 ; i< tab.length ; i++ )
+		{
+			double Ndouble;
+			Ndouble = N ;
+			tabTFIDF[i] =(tab[i]* Math.log(Ndouble / DF[i])) ;			
+		}
+		
+		return tabTFIDF ;
+			
+			
+	}
+
 			
 	
 	
@@ -883,6 +901,10 @@ public class Methodes3PPVTFIDF
 		indiceCommande1 = correspondanceClasseAction(indicePlusProche1) ;
 		indiceCommande2 = correspondanceClasseAction(indicePlusProche2) ;
 		indiceCommande3 = correspondanceClasseAction(indicePlusProche3) ;
+		
+		System.out.println("indicePlusProche1 = " + indicePlusProche1 +" " +toutesLesPhrases.get(indicePlusProche1));
+		System.out.println("indicePlusProche2 = " + indicePlusProche2 +" " + toutesLesPhrases.get(indicePlusProche2));
+		System.out.println("indicePlusProche3 = " + indicePlusProche3 +" " + toutesLesPhrases.get(indicePlusProche3));
 		
 		
 		indicePlusProbable = indiceCommande1 ;
